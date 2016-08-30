@@ -1,0 +1,104 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "9dd9e835aebe1060ba7190ad2b2ed951",
+      "css": "search",
+      "code": 59392,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 61593,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "032bd8bbd70adf90ead98b6813bfe446",
+      "css": "newspaper",
+      "code": 61930,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "757afacc32d82967975cbb3b45cfb41b",
+      "css": "desktop",
+      "code": 61704,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "598a5f2bcf3521d1615de8e1881ccd17",
+      "css": "clock",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a73c5deb486c8d66249811642e5d719a",
+      "css": "arrows-cw",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "dc3f1d5b1d006f7f7b3b6295eccab9da",
+      "css": "camera",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "630529f03c319c01101aa167181b650e",
+      "css": "tag-1",
+      "code": 59398,
+      "src": "elusive"
+    },
+    {
+      "uid": "531bc468eecbb8867d822f1c11f1e039",
+      "css": "calendar",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e8ebe79f3f6dbe1af069e67d2c13bf98",
+      "css": "itunes",
+      "code": 59410,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M494.8 0C221.5 0 0 221.5 0 494.8 0 768.2 221.5 989.7 494.8 989.7 768.1 989.7 989.7 768.2 989.7 494.8 989.7 221.5 768.1 0 494.8 0L494.8 0ZM661.4 612.3C662 641.5 637.4 672.6 599.7 686.6 555.3 703.1 520.6 689.7 508.8 656.7 497 623.8 512.7 583.6 557.1 567.1 576.8 559.8 596.7 558.5 613.8 562L613.8 362.7 425.9 405.8 425.9 665.2C426.5 694.5 401.8 725.5 364.1 739.5 319.7 756 285 742.6 273.2 709.7 261.5 676.7 277.1 636.6 321.5 620.1 341.3 612.8 361.2 611.4 378.3 615L378.2 300.9 661.4 240.1 661.4 612.3 661.4 612.3Z",
+        "width": 1000
+      },
+      "search": [
+        "itunes"
+      ]
+    },
+    {
+      "uid": "fc2d5d8c873de3c9d1828705ea4a0f78",
+      "css": "youtube-with-circle",
+      "code": 59412,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M580.1 491.7L467.8 439.3C458 434.7 450 439.8 450 450.6V549.4C450 560.2 458.1 565.3 467.9 560.8L580.1 508.4C589.9 503.7 589.9 496.3 580.1 491.7ZM500 20C234.9 20 20 234.9 20 500S234.9 980 500 980 980 765.1 980 500 765.1 20 500 20ZM500 695C254.3 695 250 672.9 250 500S254.3 305 500 305 750 327.1 750 500 745.7 695 500 695Z",
+        "width": 1000
+      },
+      "search": [
+        "youtube-with-circle"
+      ]
+    }
+  ]
+}
