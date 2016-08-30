@@ -24,38 +24,18 @@
 
     <!-- off-canvas left menu -->
     <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-      <ul class="vertical drilldown menu" data-responsive-menu="drilldown medium-dropdown">
-          <li class="has-submenu">
-            <a href="#">About</a>
-            <ul class="menu submenu vertical" data-submenu>
-              <li><a href="/post.php">History</a></li>
-              <li><a href="/post-svg.php">People</a></li>
-              <li><a href="/post-webinar.php">Members</a></li>
-              <li><a href="/listing.php">Contact Us</a></li>
-              <li><a href="/search.php">Partners</a></li>
-            </ul>
-          </li>
-          <li class="has-submenu">
-            <a href="#">Plan</a>
-            <ul class="menu submenu vertical" data-submenu>
-              <li><a href="/404.php">Members</a></li>
-              <li><a href="left_wide_13">Contact Us</a></li>
-              <li><a href="left_wide_13">Partners</a></li>
-            </ul>
-          </li>
-          <li class="has-submenu">
-            <a href="/learn.php">Learn</a>
-          </li>
-          <li class="has-submenu">
-            <a href="#">Connect</a>
-          </li>
-          <li class="has-submenu">
-            <a href="#">OER Degrees</a>
-          </li>
-          <li class="has-submenu">
-            <a href="#">Become a member</a>
-          </li>
-        </ul>
+      <?php
+        wp_nav_menu(array(
+            'container' => false,
+            'menu' => __( 'Drill Menu', 'textdomain' ),
+            'menu_class' => 'vertical menu',
+            'theme_location' => 'main',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s" data-drilldown="">%3$s</ul>',
+            //Recommend setting this to false, but if you need a fallback...
+            'fallback_cb' => 'f6_drill_menu_fallback',
+            'walker' => new F6_DRILL_MENU_WALKER(),
+        ));
+      ?>
     </div>
 
     <!-- "wider" top-bar menu for 'medium' and up -->
@@ -71,37 +51,17 @@
       </div>
 
       <div class="medium-9 columns">
-        <ul class="dropdown menu" data-dropdown-menu>
-          <li class="has-submenu">
-            <a href="#">About</a>
-            <ul class="menu submenu vertical" data-submenu>
-              <li><a href="/post.php">History</a></li>
-              <li><a href="/post-svg.php">People</a></li>
-              <li><a href="/post-webinar.php">Members</a></li>
-              <li><a href="/listing.php">Contact Us</a></li>
-              <li><a href="/search.php">Partners</a></li>
-            </ul>
-          </li>
-          <li class="has-submenu">
-            <a href="#">Plan</a>
-            <ul class="menu submenu vertical" data-submenu>
-              <li><a href="/404.php">Members</a></li>
-              <li><a href="left_wide_13">Contact Us</a></li>
-              <li><a href="left_wide_13">Partners</a></li>
-            </ul>
-          </li>
-          <li class="has-submenu">
-            <a href="/learn.php">Learn</a>
-          </li>
-          <li class="has-submenu">
-            <a href="#">Connect</a>
-          </li>
-          <li class="has-submenu">
-            <a href="#">OER Degrees</a>
-          </li>
-          <li class="has-submenu">
-            <a href="#">Become a member</a>
-          </li>
-        </ul>
+        <?php 
+            wp_nav_menu(array(
+                'container' => false,
+                'menu' => __( 'Top Bar Menu', 'textdomain' ),
+                'menu_class' => 'dropdown menu',
+                'theme_location' => 'main',
+                'items_wrap'      => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+                //Recommend setting this to false, but if you need a fallback...
+                'fallback_cb' => 'f6_topbar_menu_fallback',
+                'walker' => new F6_TOPBAR_MENU_WALKER(),
+            ));
+        ?>
       </div>
     </div>

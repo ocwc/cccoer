@@ -455,6 +455,11 @@ li.footer-header {
 	position: relative;
 	margin-top: rem-calc(-520);
 	height: rem-calc(360);
+
+	@include breakpoint(small only) {
+		margin-top: rem-calc(-440);
+		height: rem-calc(280);
+	}
 }
 
 .post-title {

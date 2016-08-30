@@ -1,7 +1,7 @@
 <div class="subheading-bluebg subheading-iconbg">
 	<div class="row">
 		<div class="small-12 columns">
-			<img src="/images/icons/icon-webinar.svg" class="subheading-background-icon" />
+			<img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-webinar.svg" class="subheading-background-icon" />
 		</div>
 	</div>
 </div>

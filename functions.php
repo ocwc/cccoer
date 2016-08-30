@@ -2,11 +2,22 @@
 
 if( ! isset( $content_width ) ) $content_width = 1024;
 
+function cccoer_menus() {
+  register_nav_menus(
+    array(
+      'main' => 'Main Menu',
+      'footer' => 'Footer',
+    )
+  );
+
+}
+
 function cccoer_setup() {
 	remove_action('wp_head', 'rsd_link');
 	remove_action('wp_head', 'wlwmanifest_link');
 
 	add_theme_support( 'post-thumbnails' );
+	add_action( 'init', 'cccoer_menus' );
 }
 add_action( 'after_setup_theme', 'cccoer_setup' );
 
@@ -25,6 +36,8 @@ function cccoer_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cccoer_scripts' );
 add_action( 'admin_enqueue_scripts', 'cccoer_scripts' );
+
+require_once( get_template_directory() . '/inc/menu_walker.php' );
 
 // require_once( get_template_directory() . '/inc/helpers.php' );
 // require_once( get_template_directory() . '/inc/filters.php' );
