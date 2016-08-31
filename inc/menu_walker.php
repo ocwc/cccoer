@@ -51,4 +51,39 @@ function f6_drill_menu_fallback($args)
     echo '<ul class="vertical menu" data-drilldown="">'.$fallback.'</ul>';
 }
 
-?>
+
+class CCCOER_FOOTER_MENU_WALKER extends Walker_Nav_Menu
+{
+    function start_lvl( &$output, $depth = 0, $args = array() ) {
+        $indent = str_repeat("\t", $depth);
+        // $output .= "\n$indent<ul>\n";
+    }
+
+    function end_lvl( &$output, $depth = 0, $args = array() ) {
+
+    }
+
+    function start_el( &$output, $object, $depth = 0, $args = array(), $current_object_id = 0 ) {
+        if ( $depth === 0 ) {
+            $output .= "<div class=\"small-6 medium-expand columns\"><ul class=\"no-bullet\">";
+
+            $output .= sprintf( "\n<li class=\"footer-header\">%s</li>\n", $object->title );
+
+        } else {
+            $output .= sprintf( "\n<li><a href='%s'%s>%s</a></li>\n",
+                $object->url,
+                ( $object->object_id === get_the_ID() ) ? ' class="current"' : '',
+                $object->title
+            );
+        }
+
+    }
+
+    function end_el( &$output, $object, $depth = 0, $args = array() ) {
+        if ( $depth === 0 ) {
+            $output .= "</ul></div>";
+        }
+
+    }
+
+}

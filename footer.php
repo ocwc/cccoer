@@ -2,6 +2,19 @@
 
       <div class="footer-wrapper">
         <div class="row footer">
+            <?php
+              wp_nav_menu(array(
+                  'container' => false,
+                  'menu' => __( 'Drill Menu', 'textdomain' ),
+                  'menu_class' => '',
+                  'theme_location' => 'footer',
+                  'items_wrap'      => '%3$s',
+                  'fallback_cb' => false,
+                  'walker' => new CCCOER_FOOTER_MENU_WALKER(),
+              ));
+            ?>
+
+          <!--
           <div class="small-6 medium-expand columns">
             <ul class="no-bullet">
               <li class="footer-header">About</li>
@@ -16,48 +29,16 @@
           <div class="small-6 medium-expand columns">
             <ul class="no-bullet">
               <li class="footer-header">Learn</li>
-              <li>Why OER</li>
-              <li>Case Studies</li>
-              <li>Research</li>
-              <li>Blog</li>
-              <li>Platforms</li>
+              <li><a href="#">Why OER</a></li>
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Platforms</a></li>
             </ul>
           </div>
+          -->
 
-          <div class="small-6 medium-expand columns">
-            <ul class="no-bullet">
-              <li class="footer-header">Plan</li>
-              <li>Advocacy</li>
-              <li>Campus Toolkit</li>
-              <li>Guides for Orgs</li>
-              <li>Building a Team</li>
-              <li>Goals</li>
-              <li>Courses</li>
-            </ul>
-          </div>
-
-          <div class="small-6 medium-expand columns">
-            <ul class="no-bullet">
-              <li class="footer-header">Connect</li>
-              <li>Events</li>
-              <li>Webinars</li>
-              <li>Conferences</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-
-
-          <div class="small-6 medium-expand columns">
-            <ul class="no-bullet">
-              <li class="footer-header">OER Degrees</li>
-              <li>Link 1</li>
-              <li>Link 2</li>
-              <li>Link 3</li>
-              <li>Link 4</li>
-            </ul>
-          </div>
-
-          <div class="small-6 medium-expand columns">
+          <div class="small-12 medium-expand columns">
             <ul class="no-bullet">
               <li class="footer-header">Contact</li>
               <p class="footer-contact">
@@ -67,6 +48,7 @@
               </p>
             </ul>
           </div>
+
 
           <div class="small-12 columns"></div>
 

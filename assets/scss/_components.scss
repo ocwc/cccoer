@@ -81,6 +81,15 @@ li.footer-header {
 	margin-top: rem-calc(8);
 }
 
+.footer a {
+	color: $black;
+}
+
+.footer a:hover,
+.footer a:active {
+	color: $blue;
+}
+
 /* Header */
 .header {
 	margin-top: rem-calc(7);
