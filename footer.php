@@ -14,30 +14,6 @@
               ));
             ?>
 
-          <!--
-          <div class="small-6 medium-expand columns">
-            <ul class="no-bullet">
-              <li class="footer-header">About</li>
-              <li>History</li>
-              <li>People</li>
-              <li>Members</li>
-              <li>Contact Us</li>
-              <li>Partners</li>
-            </ul>
-          </div>
-
-          <div class="small-6 medium-expand columns">
-            <ul class="no-bullet">
-              <li class="footer-header">Learn</li>
-              <li><a href="#">Why OER</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Platforms</a></li>
-            </ul>
-          </div>
-          -->
-
           <div class="small-12 medium-expand columns">
             <ul class="no-bullet">
               <li class="footer-header">Contact</li>

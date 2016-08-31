@@ -17,6 +17,7 @@ function cccoer_setup() {
 	remove_action('wp_head', 'wlwmanifest_link');
 
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'title-tag' );
 	add_action( 'init', 'cccoer_menus' );
 }
 add_action( 'after_setup_theme', 'cccoer_setup' );
