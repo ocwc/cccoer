@@ -56,4 +56,4 @@ gulp.task('default', ['sass-devel'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
 
-gulp.task('build', ['sass']);
+gulp.task('build', ['sass', 'compress']);
