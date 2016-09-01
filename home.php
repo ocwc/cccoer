@@ -2,14 +2,11 @@
 
 <div class="row text-center align-center subheading-nobg">
 	<div class="small-12 columns">
-		<h1 class="subheading-nobg-h1">Community of Practice for OER adoption</h1>
+		<h1 class="subheading-nobg-h1"><?php the_field('homepage_header_title'); ?></h1>
 	</div>
 
 	<div class="small-10 columns">
-		<p class="subheading-p">Our mission is to expand access to education by promoting awareness and adoption of Open Educational Resources (OER).<br />
-			Over 250 colleges have joined us and many more participate in our activities and use resources on the website.<br />
-			Find out how to become a member of CCCOER at the Open Education Consortium.
-		</p>
+		<p class="subheading-p"><?php the_field('homepage_header_text'); ?></p>
 
 		<a href="#" class="button hollow text-uppercase">More about CCCOER</a>
 	</div>
@@ -38,7 +35,7 @@
 					<a href="#" class="card">
 						<img class="" src="http://lorempixel.com/g/400/260/" />
 						<div class="card-section text-uppercase">
-							<?php 
+							<?php
 								$input = array('<i class="icon-desktop"></i>',
 											   '<i class="icon-newspaper"></i>',
 											   '<i class="icon-user"></i>');
@@ -48,7 +45,7 @@
 						</div>
 						<div class="card-white">
 							<div class="card-title">
-								<?php 
+								<?php
 									$input = array('The AVU Peace Management and Conflict Resolution (PMCR) MOOC',
 									'URJCx: Abiertos al Conocimiento',
 									'Online Education Resources are online at MIT',
