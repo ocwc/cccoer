@@ -2,11 +2,11 @@
 
 <div class="row text-center align-center subheading-nobg">
 	<div class="small-12 columns">
-		<h1 class="subheading-nobg-h1"><?php the_field('homepage_header_title'); ?></h1>
+		<h1 class="subheading-nobg-h1"><?php the_field('homepage_header_title', 'options'); ?></h1>
 	</div>
 
 	<div class="small-10 columns">
-		<p class="subheading-p"><?php the_field('homepage_header_text'); ?></p>
+		<p class="subheading-p"><?php the_field('homepage_header_text', 'options'); ?></p>
 
 		<a href="#" class="button hollow text-uppercase">More about CCCOER</a>
 	</div>
