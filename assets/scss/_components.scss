@@ -375,13 +375,13 @@ li.footer-header {
 /* Blue Background with Image */
 .subheading-imagebg {
 	height: rem-calc(480);
-	
+
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .subheading-iconbg {
-	height: rem-calc(480);	
+	height: rem-calc(480);
 }
 
 .subheading-background-icon {
@@ -450,7 +450,7 @@ li.footer-header {
 
 	@include breakpoint (large) {
 		left: 0;
-	}	
+	}
 }
 
 .post-content h1,
@@ -493,6 +493,14 @@ li.footer-header {
 		left: rem-calc(0);
 		right: rem-calc(0);
 	}
+}
+
+body.page .post-title {
+	margin-bottom: rem-calc(32);
+}
+
+body.page .subheading-narrow .post-title {
+	margin-bottom: rem-calc(90);
 }
 
 .subheading-narrow .post-title-container {
@@ -561,13 +569,13 @@ li.footer-header {
 
 .post-event-date {
 	// float: left;
-	
+
 	width: rem-calc(79);
 	height: rem-calc(79);
 
 	padding: rem-calc(10);
 	background-color: $blue;
-	
+
 	color: $white;
 	text-align: center;
 	font-weight: bold;
