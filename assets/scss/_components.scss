@@ -21,6 +21,7 @@ $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
 .search-nav,
 .search-nav a {
 	color: $text-grey;
+	font-size: rem-calc(14);
 }
 
 .search-nav a:hover {
@@ -31,7 +32,7 @@ $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
 /* Icons */
 
 .icon-search {
-	font-size: rem-calc(21);
+	font-size: rem-calc(16);
 	border-right: 1px solid #C8C8C8;
 	padding-right: rem-calc(5);
 	margin-right: rem-calc(5);
@@ -39,7 +40,7 @@ $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
 .icon-twitter,
 .icon-facebook {
-	font-size: rem-calc(21);
+	font-size: rem-calc(16);
 }
 
 .search-nav a:hover .icon-search {
