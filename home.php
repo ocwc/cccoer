@@ -71,30 +71,19 @@
 		</div>
 	</div>
 
-	<div class="home-info">
-		<div class="row">
-			<div class="small-12 medium-6 columns home-info-tile">
-				<h2 class="home-info-title">Learn</h2>
-				<p>Use the links below to find open textbooks and open courseware for community college courses. Browse 750+ Open Textbooks by Subject Find 150+ peer and accessibility reviews of open textbooks at College Open Textbooks</p>
-				<a href="#" class="button green-light no-radius text-uppercase">Learn more</a>
-			</div>
-			<div class="small-12 medium-6 columns home-info-tile">
-				<h2 class="home-info-title">Plan</h2>
-				<p>Attend our monthly educational outreach webinars featuring faculty who are engaged in open educational resource development and re-use. View the archived recordings and slides.</p>
-				<a href="#" class="button green-light no-radius text-uppercase">Learn more</a>
-			</div>
-			<div class="small-12 medium-6 columns home-info-tile">
-				<h2 class="home-info-title">OER Degrees</h2>
-				<p>Many colleges promote the use of OER on their campuses by providing information and networking on their websites. If you would like your college website added, please contact us.</p>
-				<a href="#" class="button green-light no-radius text-uppercase">Learn more</a>
-			</div>
-			<div class="small-12 medium-6 columns home-info-tile">
-				<h2 class="home-info-title">Connect</h2>
-				<p>Check out the Campus Promo Kit for help in promoting the use of OER on your campus and to provide training and tutorials for faculty on best practices for adoption and sharing of OER.</p>
-				<a href="#" class="button green-light no-radius text-uppercase">Learn more</a>
-			</div>
-		</div>
-	</div>
+    <?php if ( have_rows('home_panel', 'options') ) : ?>
+        <div class="home-info">
+            <div class="row">
+            <?php while ( have_rows('home_panel', 'options') ) : the_row(); ?>
+                <div class="small-12 medium-6 columns home-info-tile">
+                    <h2 class="home-info-title"><?php the_sub_field('title'); ?></h2>
+                    <p><?php the_sub_field('description'); ?></p>
+                    <a href="<?php the_sub_field('url'); ?>" class="button green-light no-radius text-uppercase">Learn more</a>
+                </div>
+            <?php endwhile; ?>
+            </div>
+        </div>
+    <?php endif; ?>
 
 	<div class="home-social">
 		<div class="row">

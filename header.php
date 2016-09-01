@@ -42,16 +42,16 @@
     <div class="row header show-for-medium">
       <div class="medium-12 columns text-right text-uppercase search-nav">
         <a href="#">Search <i class="icon-search"></i></a>
-        Follow Us 
+        Follow Us
           <a href="#" alt="CCCOER on Twitter"><i class="icon-twitter"></i></a><a href="#" alt="CCCOER on Facebook"><i class="icon-facebook"></i></a>
       </div>
 
       <div class="medium-3 columns logo-container">
-        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="CCCOER Logo" /></a>
+        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="CCCOER Logo" /></a>
       </div>
 
       <div class="medium-9 columns">
-        <?php 
+        <?php
             wp_nav_menu(array(
                 'container' => false,
                 'menu' => __( 'Top Bar Menu', 'textdomain' ),
