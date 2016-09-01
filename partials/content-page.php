@@ -6,7 +6,16 @@
 <?php endif; ?>
 
 <!-- original content goes in this container -->
-<div class="off-canvas-content subheading-narrow" data-off-canvas-content>
+<div
+
+    <?php if ( get_field('header_image') ) : ?>
+        class="off-canvas-content subheading-image"
+    <?php else : ?>
+        class="off-canvas-content subheading-narrow"
+    <?php endif; ?>
+
+    data-off-canvas-content
+    >
     <div class="row align-center">
         <div class="small-12 columns post-title-container">
             <h1 class="post-title u-color-white"><?php the_title(); ?></h1>
