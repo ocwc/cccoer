@@ -31,10 +31,29 @@
         <div class="small-12 columns post-content-body">
             <?php the_content(); ?>
 
-            <h3>CCCOER Members</h3>
-            <?php foreach ($members as $member) : ?>
-                <?php echo $member; ?>
-            <?php endforeach; ?>
+            <div class="row">
+                <?php $state = null; ?>
+                <?php foreach ($members as $member) : ?>
+                    <?php if ( $member->state !== $state ) : ?>
+                        <div class="small-12 columns">
+                            <h2><?php echo $member->state; ?></h2>
+                        </div>
+                        <?php $state = $member->state; ?>
+                    <?php endif; ?>
+
+
+                        <div class="small-3 columns">
+                            <?php if ( $member->logo_large ) : ?>
+                                <img src="https://members.oeconsortium.org/media/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
+                                <br /><br />
+                            <?php endif; ?>
+
+                            <strong><?php echo $member->name; ?></strong>
+                        </div>
+
+                    <?php ///var_dump($member); ?>
+                <?php endforeach; ?>
+            </div>
         </div>
     </div>
 <!-- </div> -->
