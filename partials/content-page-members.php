@@ -42,10 +42,11 @@
                     <?php endif; ?>
 
 
-                        <div class="small-3 columns members-single-member">
+                        <div class="small-12 columns members-single-member">
                             <?php if ( $member->logo_large ) : ?>
-                                <img src="https://members.oeconsortium.org/media/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
-                                <br /><br />
+                                <div class="small-3">
+                                    <img src="https://members.oeconsortium.org/media/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
+                                </div>
                             <?php endif; ?>
 
                             <?php if ( $member->main_website ) : ?>
@@ -53,6 +54,7 @@
                             <?php else : ?>
                                 <strong><?php echo $member->name; ?></strong>
                             <?php endif; ?>
+                            <br /><br />
                         </div>
 
                     <?php ///var_dump($member); ?>
