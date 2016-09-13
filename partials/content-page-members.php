@@ -42,13 +42,17 @@
                     <?php endif; ?>
 
 
-                        <div class="small-3 columns">
+                        <div class="small-3 columns members-single-member">
                             <?php if ( $member->logo_large ) : ?>
                                 <img src="https://members.oeconsortium.org/media/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
                                 <br /><br />
                             <?php endif; ?>
 
-                            <strong><?php echo $member->name; ?></strong>
+                            <?php if ( $member->main_website ) : ?>
+                                <a href="<?php echo $member->main_website; ?>"><strong><?php echo $member->name; ?></strong></a>
+                            <?php else : ?>
+                                <strong><?php echo $member->name; ?></strong>
+                            <?php endif; ?>
                         </div>
 
                     <?php ///var_dump($member); ?>
