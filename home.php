@@ -91,21 +91,9 @@
                 <p class="text-uppercase">Tweet with us by using #CCCOER Hashtag</p>
             </div>
 
-            <?php foreach(range(0,3) as $i) : ?>
+            <?php foreach (get_cccoer_tweets() as $tweet) : ?>
                 <div class="small-6 medium-3 columns">
-                    <div class="card-social">
-                        <div class="card-social-avatar clearfix">
-                            <img src="http://lorempixel.com/g/54/54/">
-                            <div>
-                                J Glapa-Grossklag<br />
-                                <a href="#">@JGlapaGrossklag</a>
-                            </div>
-                        </div>
-                        <p>New blog about the Open Education Global Conference 2017 in Cape Town: t.co/OvFXLqhcFs #oeglobal #OER @oeconsortium</p>
-                        <div class="card-social-meta">
-                            31 mins ago on Twitter
-                        </div>
-                    </div>
+                    <?php echo do_shortcode("[tweet id='$tweet']"); ?>
                 </div>
             <?php endforeach; ?>
         </div>
