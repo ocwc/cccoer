@@ -36,23 +36,23 @@
                 <?php foreach ($members as $member) : ?>
                     <?php if ( $member->state !== $state ) : ?>
                         <div class="small-12 columns">
-                            <h2><?php echo $member->state; ?></h2>
+                            <h2 class="member-state-title"><?php echo $member->state; ?></h2>
                         </div>
                         <?php $state = $member->state; ?>
                     <?php endif; ?>
 
 
-                        <div class="small-12 columns members-single-member">
+                        <div class="small-3 columns members-single-member text-center">
                             <?php if ( $member->logo_large ) : ?>
-                                <div class="small-3">
-                                    <img src="https://members.oeconsortium.org/media/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
-                                </div>
+                                <a href="<?php echo $member->main_website; ?>   ">
+                                    <img class="member-logo" src="https://members.oeconsortium.org/media/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
+                                </a>
                             <?php endif; ?>
 
                             <?php if ( $member->main_website ) : ?>
-                                <a href="<?php echo $member->main_website; ?>"><strong><?php echo $member->name; ?></strong></a>
+                                <a class="member-name" href="<?php echo $member->main_website; ?>"><?php echo $member->name; ?></a>
                             <?php else : ?>
-                                <strong><?php echo $member->name; ?></strong>
+                                <span class="member-name"><?php echo $member->name; ?></span>
                             <?php endif; ?>
                             <br /><br />
                         </div>

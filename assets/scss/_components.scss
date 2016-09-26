@@ -1,3 +1,5 @@
+$grey: 		#D2D2D2;
+
 /* Type */
 
 $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -655,7 +657,7 @@ body.page .subheading-narrow .post-title {
 
 .post-excerpt-title {
 	font-size: rem-calc(24);
-	color: #4A4A4A;
+	color: $black;
 }
 
 .post-excerpt-meta {
@@ -722,4 +724,30 @@ body.page .subheading-narrow .post-title {
 	color: $white;
 	font-size: rem-calc(200);
 	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+}
+
+/*
+ * Members
+ */
+
+.post-content .members-single-member {
+	margin-bottom: rem-calc(32);
+}
+
+.post-content .member-state-title {
+	margin-bottom: rem-calc(20);
+	font-size: rem-calc(24);
+	color: $black;
+}
+
+.post-content .member-logo {
+	padding: rem-calc(5);
+	border: 1px solid $grey;
+	border-radius: rem-calc(5);
+	margin-bottom: rem-calc(15);
+}
+
+.post-content .member-name {
+	color: $black;
+	line-height: rem-calc(20);
 }
