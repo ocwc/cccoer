@@ -47,6 +47,4 @@
             </div>
         <?php endif; ?>
     </div>
-
-    <?php if ( have_rows( 'oerdegrees_colleges' ) ) : ?>
 <!-- </div> -->
