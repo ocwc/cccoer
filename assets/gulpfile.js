@@ -52,7 +52,7 @@ gulp.task('compress', function() {
 });
 
 
-gulp.task('default', ['sass-devel'], function() {
+gulp.task('default', ['sass-devel', 'compress'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
 

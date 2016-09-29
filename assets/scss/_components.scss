@@ -1,4 +1,5 @@
 $grey: 		#D2D2D2;
+$green:		#6DC15F;
 
 /* Type */
 
@@ -751,3 +752,38 @@ body.page .subheading-narrow .post-title {
 	color: $black;
 	line-height: rem-calc(20);
 }
+
+/*
+ * Content
+ */
+
+.post-content h3 {
+	margin-bottom: rem-calc(28);
+	font-size: rem-calc(24);
+	color: $black;
+}
+
+
+/*
+ * OER Degrees
+ */
+
+.oerdegrees-colleges {
+	margin-top: rem-calc(100);
+	margin-bottom: rem-calc(90);
+}
+
+.oerdegrees-colleges h3 {
+	// margin-bottom: rem-calc(40);
+}
+
+.post-content .oerdegrees-colleges-title {
+	display: block;
+	margin-top: rem-calc(25);
+	margin-bottom: rem-calc(30);
+
+	font-size: rem-calc(16);
+	font-weight: bold;
+	color: $black;
+}
+
