@@ -25,7 +25,7 @@
                 <a href="#" class="button hollow expanded white text-uppercase">View All Webinars</a>
             </div>
             <div class="medium-3 columns">
-                <a href="#" class="button hollow expanded white text-uppercase">View All Members</a>
+                <a href="/members/" class="button hollow expanded white text-uppercase">View All Members</a>
             </div>
         </div>
 
