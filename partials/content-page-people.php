@@ -28,22 +28,5 @@
         <div class="small-12 columns post-content-body">
             <?php the_content(); ?>
         </div>
-
-        <?php if ( have_rows( 'oerdegrees_colleges' ) ) : ?>
-            <div class="oerdegrees-colleges row clearfix">
-                <div class="small-12 columns post-content row">
-                    <h3 class="text-center">Colleges with OER Degrees</h3>
-                </div>
-                <?php while ( have_rows( 'oerdegrees_colleges' ) ) : the_row(); ?>
-                    <div class="medium-4 columns oerdegrees-colleges-single text-center">
-                        <img src="<?php echo get_sub_field('image')['sizes']['medium_large']; ?>"
-                             alt="<?php echo get_sub_field('image')['name']; ?>" />
-                        <br />
-                        <h4 class="oerdegrees-colleges-title"><?php the_sub_field('name'); ?></h4>
-                        <?php the_sub_field('description'); ?>
-                    </div>
-                <?php endwhile; ?>
-            </div>
-        <?php endif; ?>
     </div>
 <!-- </div> -->
