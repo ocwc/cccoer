@@ -29,11 +29,11 @@
           <div class="small-12 columns"></div>
 
           <div class="small-2 medium-1 columns footer-license">
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/cc-by.svg" class="footer-cc-by" /></a>
+            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/cc-by.svg" class="footer-cc-by" alt="Creative Commons - BY license" /></a>
           </div>
 
           <div class="small-10 medium-6 columns footer-license">
-            <p>Except where otherwise noted, content on www.cccoer.org is licensed under a 
+            <p>Except where otherwise noted, content on www.cccoer.org is licensed under a
             Creative Commons Attribution 4.0 International License.</p>
           </div>
         </div>

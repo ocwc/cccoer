@@ -787,3 +787,23 @@ body.page .subheading-narrow .post-title {
 	color: $black;
 }
 
+/*
+ * People
+ */
+
+.person-image {
+	text-align: center;
+}
+
+.person-image img {
+	border-radius: 50%;
+	margin-bottom: rem-calc(20);
+
+	@include breakpoint(medium) {
+		padding: 0 rem-calc(45);
+	}
+}
+
+.person-details, .people-oec-staff {
+	margin-bottom: rem-calc(60);
+}
