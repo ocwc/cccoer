@@ -89,6 +89,7 @@
         </div>
     </div>
 
+    <?php /*
     <?php if ( have_rows('home_partners', 'options') ) : ?>
         <div class="home-partners">
             <div class="row align-center">
@@ -106,6 +107,7 @@
             </div>
         </div>
     <?php endif; ?>
+    */ ?>
 <!-- </div> -->
 
 <?php get_footer(); ?>
