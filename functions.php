@@ -53,7 +53,7 @@ if( function_exists('acf_add_options_page') ) {
 
 function get_homepage_posts() {
     $args = array('post_type' => 'post',
-                  'posts_per_page' => 8);
+                  'posts_per_page' => 12);
     return new WP_Query($args);
 }
 
