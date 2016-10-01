@@ -36,10 +36,14 @@
                 </div>
                 <?php while ( have_rows( 'oerdegrees_colleges' ) ) : the_row(); ?>
                     <div class="medium-4 columns oerdegrees-colleges-single text-center">
-                        <img src="<?php echo get_sub_field('image')['sizes']['medium_large']; ?>"
-                             alt="<?php echo get_sub_field('image')['name']; ?>" />
+                        <a href="<?php the_sub_field('link'); ?>">
+                            <img src="<?php echo get_sub_field('image')['sizes']['medium_large']; ?>"
+                                 alt="<?php echo get_sub_field('image')['name']; ?>" />
+                        </a>
                         <br />
-                        <h4 class="oerdegrees-colleges-title"><?php the_sub_field('name'); ?></h4>
+                        <h4 class="oerdegrees-colleges-title">
+                            <a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('name'); ?></a>
+                        </h4>
                         <?php the_sub_field('description'); ?>
                     </div>
                 <?php endwhile; ?>
