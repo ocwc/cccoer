@@ -13,7 +13,23 @@ $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	color: $white;
 	text-shadow: 0 0 5px rgba(0,0,0,0.8);
 }
-
+img.alignright {
+	float:right; margin:0 0 1em 1em
+}
+img.alignleft {
+	float:left; margin:0 1em 1em 0
+}
+img.aligncenter {
+	display: block; margin-left: auto; margin-right: auto
+}
+a img.alignright {
+	float:right; margin:0 0 1em 1em}
+a img.alignleft {
+	float:left; margin:0 1em 1em 0
+}
+a img.aligncenter {
+	display: block; margin-left: auto; margin-right: auto
+}
 /* Off canvas and top menu */
 .off-canvas-content, .off-canvas-content {
 	// margin-top: rem-calc(36);
