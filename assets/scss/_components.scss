@@ -249,6 +249,61 @@ li.footer-header {
 	background-color: #B1D764;
 }
 
+.button-flat {
+	position: relative;
+	float: left;
+	color: $white;
+	font-size: rem-calc(18);
+
+	padding: rem-calc(20) rem-calc(15);
+	width: 30%;
+	margin-right: rem-calc(15);
+	margin-bottom: rem-calc(20);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $white !important;
+	}
+
+	&:after {
+		position: absolute;
+		right: 10px;
+		top: 25px;
+
+		content: " ";
+
+		background-image: url('../images/icons/arrow-right.png');
+		background-image: url('../images/icons/arrow-right.svg'),
+							linear-gradient(transparent, transparent);
+		width: 15px;
+		height: 23px;
+	}
+}
+
+// $highlightGreen:
+// $highlightOrange:
+// $highlightDarkGreen:
+// $highlightRed:
+// $highlightCyan:
+
+@mixin .button-flat-color($color) {
+	background-color: $color;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken($color, 10%);
+	}
+}
+
+.button-flat-blue  		{ .button-flat-color($highlightBlue);   }
+.button-flat-green  	{ .button-flat-color($highlightGreen);  }
+.button-flat-orange 	{ .button-flat-color($highlightOrange); }
+.button-flat-darkgreen 	{ .button-flat-color($highlightDarkGreen); }
+.button-flat-red 		{ .button-flat-color($highlightRed); }
+.button-flat-cyan 		{ .button-flat-color($highlightCyan); }
+
 /* Home - Collage */
 .home-collage {
 	padding-top: rem-calc(98);
