@@ -281,13 +281,7 @@ li.footer-header {
 	}
 }
 
-// $highlightGreen:
-// $highlightOrange:
-// $highlightDarkGreen:
-// $highlightRed:
-// $highlightCyan:
-
-@mixin .button-flat-color($color) {
+@mixin button-flat-color($color) {
 	background-color: $color;
 
 	&:hover,
@@ -297,12 +291,12 @@ li.footer-header {
 	}
 }
 
-.button-flat-blue  		{ .button-flat-color($highlightBlue);   }
-.button-flat-green  	{ .button-flat-color($highlightGreen);  }
-.button-flat-orange 	{ .button-flat-color($highlightOrange); }
-.button-flat-darkgreen 	{ .button-flat-color($highlightDarkGreen); }
-.button-flat-red 		{ .button-flat-color($highlightRed); }
-.button-flat-cyan 		{ .button-flat-color($highlightCyan); }
+.button-flat-blue  		{ @include button-flat-color($highlightBlue);   }
+.button-flat-green  	{ @include button-flat-color($highlightGreen);  }
+.button-flat-orange 	{ @include button-flat-color($highlightOrange); }
+.button-flat-darkgreen 	{ @include button-flat-color($highlightDarkGreen); }
+.button-flat-red 		{ @include button-flat-color($highlightRed); }
+.button-flat-cyan 		{ @include button-flat-color($highlightCyan); }
 
 /* Home - Collage */
 .home-collage {
