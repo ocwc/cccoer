@@ -36,7 +36,7 @@
 
         <?php if ( have_rows( 'oerdegrees_colleges' ) ) : ?>
             <div class="oerdegrees-colleges row clearfix">
-                <div class="small-12 columns post-content row">
+                <div class="small-12 columns row">
                     <h3 class="text-center">Colleges with OER Degrees</h3>
                 </div>
                 <?php while ( have_rows( 'oerdegrees_colleges' ) ) : the_row(); ?>

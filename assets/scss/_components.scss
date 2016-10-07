@@ -893,7 +893,7 @@ body.page .subheading-narrow .post-title {
  */
 
 .oerdegrees-colleges {
-	margin-top: rem-calc(100);
+	margin-top: rem-calc(30);
 	margin-bottom: rem-calc(90);
 }
 
@@ -903,8 +903,9 @@ body.page .subheading-narrow .post-title {
 
 .post-content .oerdegrees-colleges-title {
 	display: block;
-	margin-top: rem-calc(25);
-	margin-bottom: rem-calc(30);
+	margin-top: rem-calc(15);
+	margin-bottom: rem-calc(10);
+	min-height: rem-calc(46);
 
 	font-size: rem-calc(16);
 	font-weight: bold;
