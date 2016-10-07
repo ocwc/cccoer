@@ -38,7 +38,11 @@
         </div>
     <?php endif; ?>
 
-    <div class="post-content post-content-single post-content-previous-highlight row">
+    <div class="post-content post-content-single
+                <?php if ( get_field('highlight_text') ) : ?>
+                    post-content-previous-highlight
+                <?php endif; ?>
+                row">
 
         <div class="">
             <div class="small-12 columns post-content-body">
