@@ -16,7 +16,7 @@ $highlightBlue:			#1F71B9;
 .u-background-orange 	{ background-color: $highlightOrange !important; }
 .u-background-red 		{ background-color: $highlightRed !important; }
 .u-background-cyan 		{ background-color: $highlightCyan !important; }
-
+.u-background-lightgreen{ background-color: $green !important;}
 /* Type */
 
 $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -518,6 +518,16 @@ li.footer-header {
 	padding-left: 0;
 }
 
+.post-content-nobottom-borders {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.post-content-notop-borders {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
 .subheading-image .post-content {
 	margin-top: rem-calc(-190);
 }
@@ -914,6 +924,32 @@ body.page .subheading-narrow .post-title {
 	color: $black;
 }
 
+.oerdegrees-casestudies h3 {
+	color: $white;
+}
+
+.oerdegrees-casestudies-single-inner {
+  margin: rem-calc(10) rem-calc(40);
+  padding: rem-calc(25);
+  background-color: $white;
+}
+
+.oerdegrees-casestudies-single img {
+  padding: rem-calc(5);
+
+  border: 1px solid $grey;
+  border-radius: rem-calc(5);
+}
+
+.oerdegrees-casestudies-institution {
+  margin-top: rem-calc(20);
+}
+
+.oerdegrees-casestudies-institution-name {
+  padding-top: rem-calc(30);
+  font-weight: bold;
+  line-height: rem-calc(20);
+}
 /*
  * People
  */

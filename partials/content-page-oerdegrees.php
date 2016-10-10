@@ -29,7 +29,7 @@
         </div>
     <?php endif; ?>
 
-    <div class="post-content post-content-single row">
+    <div class="post-content post-content-single post-content-nobottom-borders row">
         <div class="small-12 columns post-content-body">
             <?php the_content(); ?>
         </div>
@@ -55,4 +55,32 @@
             </div>
         <?php endif; ?>
     </div>
-<!-- </div> -->
+    <div class="post-content post-content-single u-background-lightgreen post-content-notop-borders row">
+        <?php if ( have_rows( 'oerdegrees_case_studies' ) ) : ?>
+            <div class="oerdegrees-casestudies row clearfix">
+                <div class="small-12 columns">
+                    <h3 class="text-center">Case Studies</h3>
+                </div>
+                <?php while ( have_rows( 'oerdegrees_case_studies') ) : the_row(); ?>
+                    <div class="medium-6 columns oerdegrees-casestudies-single">
+                        <div class="oerdegrees-casestudies-single-inner">
+                            <?php the_sub_field('description'); ?>
+
+                            <div class="row oerdegrees-casestudies-institution">
+                                <div class="small-3 columns">
+                                    <a href="<?php the_sub_field('link'); ?>">
+                                        <img src="<?php echo get_sub_field('image')['sizes']['thumbnail']; ?>"
+                                             alt="<?php echo get_sub_field('image')['name']; ?>" />
+                                    </a>
+                                </div>
+                                <div class="small-9 columns">
+                                    <div class="oerdegrees-casestudies-institution-name"><?php the_sub_field('name'); ?></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+</div>
