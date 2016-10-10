@@ -45,7 +45,7 @@
             "label": "Status",
             "name": "webinar_status",
             "type": "radio",
-            "instructions": "announce : Announced\r\npublished : Published",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -53,11 +53,14 @@
                 "class": "",
                 "id": ""
             },
-            "choices": [],
+            "choices": {
+                "announce": "Announced",
+                "published": "Published"
+            },
             "allow_null": 0,
             "other_choice": 0,
             "save_other_choice": 0,
-            "default_value": "",
+            "default_value": "published",
             "layout": "vertical",
             "return_format": "value"
         },
@@ -96,5 +99,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1476127286
+    "modified": 1476127604
 }
