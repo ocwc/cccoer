@@ -66,3 +66,4 @@ require_once( get_template_directory() . '/inc/menu_walker.php' );
 // require_once( get_template_directory() . '/inc/custom-types.php' );
 require_once( get_template_directory() . '/inc/opengraph.php' );
 require_once( get_template_directory() . '/inc/extras.php' );
+require_once( get_template_directory() . '/inc/post_types.php' );
