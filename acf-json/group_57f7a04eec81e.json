@@ -38,6 +38,7 @@
                 "cyan": "Cyan",
                 "darkgreen": "Dark Green",
                 "green": "Green",
+                "lightgreen": "Light Green",
                 "orange": "Orange",
                 "red": "Red"
             },
@@ -66,5 +67,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1475846608
+    "modified": 1476125141
 }

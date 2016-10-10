@@ -10,13 +10,13 @@ $highlightBlue:			#1F71B9;
 
 /* Background colors */
 
-.u-background-blue 		{ background-color: $highlightBlue !important; }
-.u-background-green 	{ background-color: $highlightGreen !important; }
-.u-background-darkgreen { background-color: $highlightDarkGreen !important; }
-.u-background-orange 	{ background-color: $highlightOrange !important; }
-.u-background-red 		{ background-color: $highlightRed !important; }
-.u-background-cyan 		{ background-color: $highlightCyan !important; }
-.u-background-lightgreen{ background-color: $green !important;}
+.u-background-blue 			{ background-color: $highlightBlue !important; }
+.u-background-green 		{ background-color: $highlightGreen !important; }
+.u-background-darkgreen 	{ background-color: $highlightDarkGreen !important; }
+.u-background-orange 		{ background-color: $highlightOrange !important; }
+.u-background-red 			{ background-color: $highlightRed !important; }
+.u-background-cyan 			{ background-color: $highlightCyan !important; }
+.u-background-lightgreen	{ background-color: $green !important;}
 /* Type */
 
 $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -299,6 +299,7 @@ li.footer-header {
 .button-flat-darkgreen 	{ @include button-flat-color($highlightDarkGreen); }
 .button-flat-red 		{ @include button-flat-color($highlightRed); }
 .button-flat-cyan 		{ @include button-flat-color($highlightCyan); }
+.button-flat-lightgreen { @include button-flat-color($green); }
 
 /* Home - Collage */
 .home-collage {
