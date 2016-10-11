@@ -2,7 +2,11 @@
     <a href="<?php the_permalink(); ?>" class="card">
         <?php echo get_the_post_thumbnail(); ?>
         <div class="card-section text-uppercase">
-            <i class="icon-newspaper"></i> News
+            <?php if ( get_post_type() === 'webinar' ) : ?>
+                <i class="icon-camera"></i> Webinar
+            <?php else : ?>
+                <i class="icon-newspaper"></i> News
+            <?php endif; ?>
         </div>
         <div class="card-white">
             <div class="card-title">
