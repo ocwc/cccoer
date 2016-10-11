@@ -22,7 +22,7 @@
                 <a href="#" class="button hollow expanded white text-uppercase">View All Blogs</a>
             </div>
             <div class="medium-3 columns">
-                <a href="#" class="button hollow expanded white text-uppercase">View All Webinars</a>
+                <a href="/webinar/" class="button hollow expanded white text-uppercase">View All Webinars</a>
             </div>
             <div class="medium-3 columns">
                 <a href="/members/" class="button hollow expanded white text-uppercase">View All Members</a>
