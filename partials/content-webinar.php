@@ -11,7 +11,7 @@
     <div class="row align-center">
         <div class="small-12 columns post-title-container">
             <h1 class="post-title u-color-white"><?php the_title(); ?></h1>
-            <span class="subheading-published"><i class="icon-camera"></i> Published on August 18 2016</span>
+            <!-- <span class="subheading-published"><i class="icon-camera"></i> Published on August 18 2016</span> -->
         </div>
     </div>
     <div class="post-content post-content-single post-content-left-meta row">
