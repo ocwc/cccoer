@@ -472,7 +472,8 @@ li.footer-header {
 	opacity: 1.0;
 }
 
-.card-boxy .card-title {
+.card-boxy .card-title,
+.card-archive .card-title {
 	color: $darkGrey;
 	font-weight: bold;
 	font-size: rem-calc(14);
@@ -483,6 +484,15 @@ li.footer-header {
 	&:focus {
 		color: darken($darkGrey, 20%);
 	}
+}
+
+.card-archive .card-meta {
+	margin: 0;
+	padding: 0;
+}
+
+.card-archive {
+	margin-bottom: rem-calc(20);
 }
 
 /* Home - Partners */
