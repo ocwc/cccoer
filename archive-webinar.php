@@ -21,7 +21,12 @@
                         <?php $count++; ?>
                     <?php endwhile; ?>
                 </div>
-                <?php the_posts_navigation(); ?>
+
+                <div class="small-12 columns">
+                    <p><?php posts_nav_link('', 'Newer Webinars', 'Older Webinars'); ?></p>
+                </div>
+
+
             <?php else : ?>
                 <?php get_template_part( 'partials/content', 'none' ); ?>
             <?php endif; ?>
