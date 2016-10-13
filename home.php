@@ -19,7 +19,7 @@
     <div class="home-collage">
         <div class="row align-center">
             <div class="medium-3 columns">
-                <a href="#" class="button hollow expanded white text-uppercase">View All Blogs</a>
+                <a href="/archives/" class="button hollow expanded white text-uppercase">View All Blogs</a>
             </div>
             <div class="medium-3 columns">
                 <a href="/webinar/" class="button hollow expanded white text-uppercase">View All Webinars</a>
