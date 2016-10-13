@@ -441,6 +441,50 @@ li.footer-header {
 	left: rem-calc(12);
 }
 
+/* Webinars page cards */
+
+.card-boxy {
+	padding-bottom: rem-calc(30);
+}
+
+.card-play {
+	position: relative;
+}
+
+.card-play::before {
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 10;
+	height: rem-calc(56);
+	width: rem-calc(56);
+
+	top: calc(65% - 56px);
+	left: calc(65% - 56px);
+	opacity: 0.7;
+
+	background-image: url('../images/icons/icon-play.png');
+}
+
+.card-play:hover::before,
+.card-play:active::before,
+.card-play:focus:before {
+	opacity: 1.0;
+}
+
+.card-boxy .card-title {
+	color: $darkGrey;
+	font-weight: bold;
+	font-size: rem-calc(14);
+	line-height: rem-calc(20);
+
+	&:hover,
+	&:active,
+	&:focus {
+		color: darken($darkGrey, 20%);
+	}
+}
+
 /* Home - Partners */
 .home-partners {
 	background-color: $white;
