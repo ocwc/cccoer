@@ -16,13 +16,7 @@
     </div>
     <div class="post-content post-content-single post-content-left-meta row">
         <div class="small-12 medium-1 columns">
-            <div class="post-avatar text-center">
-                <span class="post-avatar-postedby">Posted by</span>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/sample/avatar.jpg" alt="Una Daly" class="hide-for-small-only" />
-
-                <span class="post-avatar-author "><a href="#">Una Daly</a></span>
-            </div>
-
+        
             <div class="post-share text-center hide-for-small-only">
                 <span class="post-share-text">Share</span>
 

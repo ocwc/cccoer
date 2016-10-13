@@ -1,4 +1,4 @@
-<div class="small-6 medium-3 columns card-boxy">
+<div class="small-6 large-3 columns card-boxy">
     <a href="<?php the_permalink(); ?>">
         <div class="card-play clearfix">
             <?php echo get_the_post_thumbnail(); ?>
