@@ -7,8 +7,8 @@ function cccoer_filter_mainquery( $query ) {
             array(
                 'taxonomy' => 'webinar_category',
                 'field' => 'slug',
-                'terms' => 'oer-degree',
-                'operator' => 'NOT IN'
+                'terms' => 'general-oer',
+                // 'operator' => 'NOT IN'
             )
         ));
     } elseif ( is_tax('webinar_category') ) {
