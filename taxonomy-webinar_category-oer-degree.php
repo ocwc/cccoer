@@ -21,7 +21,11 @@
                         <?php $count++; ?>
                     <?php endwhile; ?>
                 </div>
-                <?php the_posts_navigation(); ?>
+
+                <div class="small-12 columns text-center">
+                    <?php get_template_part('partials/_pagination'); ?>
+                </div>
+
             <?php else : ?>
                 <?php get_template_part( 'partials/content', 'none' ); ?>
             <?php endif; ?>

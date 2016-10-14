@@ -22,8 +22,8 @@
                     <?php endwhile; ?>
                 </div>
 
-                <div class="small-12 columns">
-                    <p><?php posts_nav_link('', 'Newer Webinars', 'Older Webinars'); ?></p>
+                <div class="small-12 columns text-center">
+                    <?php get_template_part('partials/_pagination'); ?>
                 </div>
 
 

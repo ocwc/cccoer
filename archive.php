@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 Template Name: Archives
 */
@@ -14,7 +14,7 @@ get_header(); ?>
 <div class="off-canvas-content subheading-narrow">
     <div class="post-content post-content-single row">
         <div class="small-12 columns post-content-body">
-            <?php 
+            <?php
                     $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
                     $posts = new WP_Query(array(
                                 'post_type' => 'post',
@@ -35,18 +35,18 @@ get_header(); ?>
                     <?php endwhile; ?>
 
 
-                    <?php 
+                    <?php
                         global $wp_query;
                         $temp_wp_query = $wp_query;
                         $wp_query = null;
                         $wp_query = $posts;
                     ?>
                     <div class="small-12 columns">
-                        <div class="small-12 columns">
-                            <p><?php posts_nav_link('', 'Newer Posts', 'Older Posts'); ?></p>
+                        <div class="small-12 columns text-center">
+                            <?php get_template_part('partials/_pagination'); ?>
                         </div>
                     </div>
-                    <?php 
+                    <?php
                         $wp_query = $temp_wp_query;
                     ?>
                         <?php wp_reset_postdata(); ?>
