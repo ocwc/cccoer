@@ -49,7 +49,8 @@
       <div class="medium-12 columns text-right text-uppercase search-nav">
         <a href="#">Search <i class="icon-search"></i></a>
         Follow Us
-          <a href="#" alt="CCCOER on Twitter"><i class="icon-twitter"></i></a><a href="#" alt="CCCOER on Facebook"><i class="icon-facebook"></i></a>
+          <a href="https://twitter.com/cccoer" alt="CCCOER on Twitter"><i class="icon-twitter"></i></a>
+          <!-- <a href="#" alt="CCCOER on Facebook"><i class="icon-facebook"></i></a> -->
       </div>
 
       <div class="medium-3 columns logo-container">

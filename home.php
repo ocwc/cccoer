@@ -81,10 +81,10 @@
             </div>
 
             <div class="small-12 columns home-social-icons text-center">
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg" /></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-fb2.svg" /></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-slideshare.svg" /></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-youtube.svg" /></a>
+                <a href="https://twitter.com/cccoer"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg" /></a>
+                <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-fb2.svg" /></a> -->
+                <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-slideshare.svg" /></a> -->
+                <a href="https://www.youtube.com/channel/UC-jcvZ6z94387QDu52g9VNA"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-youtube.svg" /></a>
             </div>
         </div>
     </div>
