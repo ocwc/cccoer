@@ -36,12 +36,6 @@
                 <?php while ( have_rows( 'people' ) ) : the_row(); ?>
                     <?php $role = get_sub_field('role'); ?>
                     <?php if ( $previous_role !== $role ) : ?>
-                        <?php if ( $previous_role === 'Staff' )  : ?>
-                            <div class="medium-6 small-12 columns align-self-bottom people-oec-staff">
-                                <a href="http://www.oeconsortium.org/about-oec/staff/">Mary Lou Forward, Executive Director of OEC, and her staff</a> provide operational support and additional guidance to CCCOER.
-                            </div>
-                        <?php endif; ?>
-
                         <div class="text-center small-12 columns">
                             <h3><?php the_sub_field('role'); ?></h3>
                         </div>
