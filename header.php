@@ -47,7 +47,7 @@
     <!-- "wider" top-bar menu for 'medium' and up -->
     <div class="row header show-for-medium">
       <div class="medium-12 columns text-right text-uppercase search-nav">
-        <a href="#">Search <i class="icon-search"></i></a>
+        <a href="/?s=">Search <i class="icon-search"></i></a>
         Follow Us
           <a href="https://twitter.com/cccoer" alt="CCCOER on Twitter"><i class="icon-twitter"></i></a>
           <a href="https://www.youtube.com/watch?v=SV82a8E84nU&list=PLze0jtuKTgpFV4M27-g6YojfSMXxIOeVd" alt="CCCOER on YouTube"><i class="icon-youtube-play"></i></a>
