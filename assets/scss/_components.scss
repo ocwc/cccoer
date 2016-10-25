@@ -127,7 +127,12 @@ li.footer-header {
 }
 
 .footer-cc-by {
-	margin-top: rem-calc(8);
+	width: rem-calc(100);
+	margin-bottom: rem-calc(30);
+}
+
+.footer-oec {
+	padding-top: rem-calc(30);
 }
 
 .footer a {

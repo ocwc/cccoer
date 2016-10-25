@@ -18,7 +18,7 @@
             <ul class="no-bullet">
               <li class="footer-header">Contact</li>
               <p class="footer-contact">
-                For general questions & membership queries: 
+                For general questions &amp; membership queries: 
                 <br /><br />
                 <a href="mailto:membership@cccoer.org">membership@cccoer.org</a>
               </p>
@@ -26,16 +26,20 @@
           </div>
 
 
-          <div class="small-12 columns"></div>
-
-          <div class="small-2 medium-1 columns footer-license">
-            <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/cc-by.svg" class="footer-cc-by" alt="Creative Commons - BY license" /></a>
+          <div class="small-12 columns text-center footer-oec">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/oec-logo.svg" alt="OEC Logo" />
           </div>
 
-          <div class="small-10 medium-6 columns footer-license">
-            <p>Except where otherwise noted, content on www.cccoer.org is licensed under a
+          <div class="small-12 medium-6 medium-offset-3 small-centered footer-license text-center">
+            <p>Except where otherwise noted, content on www.cccoer.org is licensed under a <br class="hide-for-small" />
             Creative Commons Attribution 4.0 International License.</p>
           </div>
+
+          <div class="small-12 text-center">
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/images/cc-by.svg" class="footer-cc-by" alt="Creative Commons - BY license" /></a>
+          </div>
+
+
         </div>
       </div>
 

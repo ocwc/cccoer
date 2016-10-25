@@ -35,9 +35,11 @@
 
             <?php the_content(); ?>
 
+            <?php /*
             <div class="post-category">
                 <i class="icon-tag-1"></i> Categories: <a href="#">OER</a>, <a href="#">Open Educational Resources</a>, <a href="#">Webinar</a>
             </div>
+            */ ?>
         </div>
     </div>
 <!-- </div> -->
