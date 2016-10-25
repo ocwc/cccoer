@@ -18,6 +18,7 @@ function cccoer_setup() {
 
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'html5', array( 'search-form' ) );
     add_action( 'init', 'cccoer_menus' );
 
     add_image_size( 'background-poster', 1440, 478, true );
