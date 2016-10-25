@@ -704,8 +704,14 @@ body.page .post-title {
 	margin-bottom: rem-calc(32);
 }
 
-body.page .subheading-narrow .post-title {
+body.page .subheading-narrow .post-title,
+body.search .subheading-narrow .post-title {
 	margin-bottom: rem-calc(90);
+}
+
+.search .subheading-bluebg,
+.page-template-page-people .subheading-bluebg {
+	padding-top: rem-calc(120);
 }
 
 .subheading-narrow .post-title-container {
