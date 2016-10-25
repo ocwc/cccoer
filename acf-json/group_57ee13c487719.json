@@ -136,7 +136,7 @@
                     },
                     "choices": {
                         "staff": "Staff",
-                        "board": "Board of Directors",
+                        "advisory": "Advisory Board Directors",
                         "emiritus": "Advisory Emeritus"
                     },
                     "allow_null": 0,
@@ -166,5 +166,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1475222240
+    "modified": 1477404740
 }
