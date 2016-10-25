@@ -4,7 +4,7 @@
              alt="<?php echo get_sub_field('image')['name']; ?>" />
     </div>
     <div class="person-details text-center">
-        <?php the_sub_field('name'); ?><br />
+        <strong><?php the_sub_field('name'); ?></strong><br />
         <?php the_sub_field('position'); ?><br />
         <?php the_sub_field('organization'); ?><br />
         <?php the_sub_field('location'); ?>
