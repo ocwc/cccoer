@@ -518,8 +518,8 @@ li.footer-header {
 .subheading-bluebg {
 	position: relative;
 
-	padding-top: rem-calc(30);
-	padding-bottom: rem-calc(60);
+	padding-top: rem-calc(20);
+	padding-bottom: rem-calc(50);
 	// margin-bottom: rem-calc(-100);
 
 	background-image: linear-gradient(270deg, #4171DD 1%, #1F3EB9 100%);
@@ -640,6 +640,10 @@ li.footer-header {
 	color: $blue;
 }
 
+.post-content h2 {
+	font-size: rem-calc(32);
+}
+
 .post-title-container {
 	position: relative;
 	margin-top: rem-calc(-520);
@@ -657,10 +661,10 @@ li.footer-header {
 	font-size: rem-calc(36);
 	font-weight: bold;
 	text-shadow: 0 0 5px rgba(0,0,0,0.4);
-	line-height: 1.2 !important;
+	line-height: 1.1 !important;
 
 	@include breakpoint(medium) {
-		font-size: rem-calc(48);
+		font-size: rem-calc(36);
 
 	}
 }
