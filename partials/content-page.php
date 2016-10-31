@@ -21,7 +21,7 @@
     data-off-canvas-content
     >
 
-    <?php if ( get_field('header_image_attribution' ) ) : ?>
+    <?php if ( get_field('header_image') && get_field('header_image_attribution' ) ) : ?>
         <div class="row align-center">
             <div class="small-12 columns post-title-container">
                 <?php if ( get_field('header_image_attribution' ) ) : ?>
