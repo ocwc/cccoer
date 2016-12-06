@@ -41,5 +41,11 @@
 				<i class="icon-tag-1"></i> Categories: <a href="#">OER</a>, <a href="#">Open Educational Resources</a>, <a href="#">Webinar</a>
 			</div>
 		</div>
+
+        <?php  if ( comments_open() || get_comments_number() ) :
+                comments_template();
+            endif;
+        ?>
+        </div>
 	</div>
 <!-- </div> -->
