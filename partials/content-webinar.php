@@ -16,7 +16,7 @@
     </div>
     <div class="post-content post-content-single post-content-left-meta row">
         <div class="small-12 medium-1 columns">
-        
+
             <div class="post-share text-center hide-for-small-only">
                 <span class="post-share-text">Share</span>
 
@@ -34,6 +34,11 @@
             <?php endif; ?>
 
             <?php the_content(); ?>
+
+            <?php if ( get_field('webinar_slideshare') ) : ?>
+                <h2><strong>Slides now available:</strong></h2>
+                <?php echo wp_oembed_get(get_field('webinar_slideshare')); ?>
+            <?php endif; ?>
 
             <?php /*
             <div class="post-category">
