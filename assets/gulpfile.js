@@ -31,7 +31,7 @@ gulp.task('sass-devel', function() {
     })
       .on('error', $.sass.logError))
     .pipe($.autoprefixer({
-      browsers: ['last 2 versions', 'ie >= 9']
+      browsers: ['last 2 versions', 'ie >= 9', 'safari >= 8']
     }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('../css'));
