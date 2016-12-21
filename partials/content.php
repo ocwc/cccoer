@@ -18,11 +18,12 @@
 		<div class="small-12 medium-1 columns">
 			<div class="post-avatar text-center">
 				<span class="post-avatar-postedby">Posted by</span>
-				<img src="<?php echo get_template_directory_uri(); ?>/images/sample/avatar.jpg" alt="Una Daly" class="hide-for-small-only" />
+                <span class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 48 ); ?></span>
 
-				<span class="post-avatar-author "><a href="#">Una Daly</a></span>
+				<span class="post-avatar-author"><?php echo get_the_author(); ?></span>
 			</div>
 
+            <?php  /*
 			<div class="post-share text-center hide-for-small-only">
 				<span class="post-share-text">Share</span>
 
@@ -31,8 +32,8 @@
 				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg" /></a><br />
 
 				<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-mail2.svg" /></a>
-
 			</div>
+            */ ?>
 		</div>
 		<div class="small-12 medium-11 columns post-content-body">
 			<?php the_content(); ?>
