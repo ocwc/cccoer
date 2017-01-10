@@ -93,3 +93,57 @@ function cc_custom_taxonomy_webinar_category() {
 
 }
 add_action( 'init', 'cc_custom_taxonomy_webinar_category', 0 );
+
+function cc_post_type_case_study() {
+
+    $labels = array(
+        'name'                  => 'Case studies',
+        'singular_name'         => 'Case study',
+        'menu_name'             => 'Case studies',
+        'name_admin_bar'        => 'Case studies',
+        'archives'              => 'Case study Archives',
+        'parent_item_colon'     => 'Parent Item:',
+        'all_items'             => 'All Items',
+        'add_new_item'          => 'Add New Item',
+        'add_new'               => 'Add New Case study',
+        'new_item'              => 'New Case study',
+        'edit_item'             => 'Edit Case study',
+        'update_item'           => 'Update Case study',
+        'view_item'             => 'View Case study',
+        'search_items'          => 'Search Item',
+        'not_found'             => 'Not found',
+        'not_found_in_trash'    => 'Not found in Trash',
+        'featured_image'        => 'Featured Image',
+        'set_featured_image'    => 'Set featured image',
+        'remove_featured_image' => 'Remove featured image',
+        'use_featured_image'    => 'Use as featured image',
+        'insert_into_item'      => 'Insert into item',
+        'uploaded_to_this_item' => 'Uploaded to this item',
+        'items_list'            => 'Items list',
+        'items_list_navigation' => 'Items list navigation',
+        'filter_items_list'     => 'Filter items list',
+    );
+    $args = array(
+        'label'                 => 'Case study',
+        'description'           => 'Case studies',
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'taxonomies'            => array('post_tag'),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'page',
+        'menu_icon'             => 'dashicons-portfolio'
+    );
+    register_post_type( 'casestudy', $args );
+
+}
+add_action( 'init', 'cc_post_type_case_study', 0 );
