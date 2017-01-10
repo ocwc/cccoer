@@ -308,7 +308,7 @@ li.footer-header {
 
 /* Home - Collage */
 .home-collage {
-	padding-top: rem-calc(98);
+	padding-top: rem-calc(30);
 	padding-bottom: rem-calc(11);
 	background-image: linear-gradient(270deg, #4171DD 1%, #1F3EB9 100%);
 }
@@ -381,11 +381,12 @@ li.footer-header {
 
 /* Home - Social */
 .home-social {
+	padding-top: rem-calc(60);
 	padding-bottom: rem-calc(55);
 }
 
 .home-social-cta {
-	margin-top: rem-calc(100);
+	margin-top: rem-calc(30);
 	margin-bottom: rem-calc(25);
 }
 

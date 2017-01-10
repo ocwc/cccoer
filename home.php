@@ -18,15 +18,7 @@
 
     <div class="home-collage">
         <div class="row align-center">
-            <div class="medium-3 columns">
-                <a href="/archives/" class="button hollow expanded white text-uppercase">View News Archives</a>
-            </div>
-            <div class="medium-3 columns">
-                <a href="/webinar/" class="button hollow expanded white text-uppercase">View All Webinars</a>
-            </div>
-            <div class="medium-3 columns">
-                <a href="/members/" class="button hollow expanded white text-uppercase">View All Members</a>
-            </div>
+            <h3 class="u-color-white">News &amp; Webinars</h3>
         </div>
 
         <div class="collage row">
@@ -38,7 +30,10 @@
 
         <div class="row align-center">
             <div class="medium-3 columns">
-                <a href="#" class="button hollow expanded white text-uppercase">Load More</a>
+                <a href="/archives/" class="button hollow expanded white text-uppercase">View News Archives</a>
+            </div>
+            <div class="medium-3 columns">
+                <a href="/webinar/" class="button hollow expanded white text-uppercase">View All Webinars</a>
             </div>
         </div>
     </div>
@@ -58,9 +53,21 @@
     <?php endif; ?>
 
     <div class="home-social">
+        <div class="row align-center">
+            <div class="small-12 columns text-center">
+                <span class="text-upperace">Follow our social media pages</span>
+            </div>
+
+            <div class="small-12 columns home-social-icons text-center">
+                <a href="https://twitter.com/cccoer"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg" /></a>
+                <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-fb2.svg" /></a> -->
+                <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-slideshare.svg" /></a> -->
+                <a href="https://www.youtube.com/playlist?list=PLze0jtuKTgpFV4M27-g6YojfSMXxIOeVd"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-youtube.svg" /></a>
+            </div>
+        </div>
         <div class="row">
             <div class="small-12 columns text-center home-social-cta">
-                <p class="text-uppercase">Tweet with us by using #CCCOER Hashtag</p>
+                <p class="text-uppercase">Tweet with us by using #CCCOER</p>
             </div>
 
             <?php foreach (get_cccoer_tweets() as $tweet) : ?>
@@ -72,19 +79,6 @@
         <div class="row align-center home-social-divider">
             <div class="small-2 columns">
                 <hr />
-            </div>
-        </div>
-
-        <div class="row align-center">
-            <div class="small-12 columns text-center">
-                <span class="text-upperace">Follow our social media pages</span>
-            </div>
-
-            <div class="small-12 columns home-social-icons text-center">
-                <a href="https://twitter.com/cccoer"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg" /></a>
-                <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-fb2.svg" /></a> -->
-                <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-slideshare.svg" /></a> -->
-                <a href="https://www.youtube.com/playlist?list=PLze0jtuKTgpFV4M27-g6YojfSMXxIOeVd"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-youtube.svg" /></a>
             </div>
         </div>
     </div>
