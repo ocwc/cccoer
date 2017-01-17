@@ -19,7 +19,7 @@
               <li class="footer-header">For general information or feedback</li>
               <p class="footer-contact">
                     Email address: <a href="mailto:info@cccoer.org">info@cccoer.org</a>, <br />
-                    Postal Address:  Open Education Consortium, CCCOER Division<br />
+                    Postal Address: <br /> Open Education Consortium, CCCOER Division<br />
                     60 Thoreau St, Suite 238<br />
                     Concord, MA 01742 USA
               </p>
