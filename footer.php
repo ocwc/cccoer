@@ -16,9 +16,8 @@
 
           <div class="small-12 medium-expand columns">
             <ul class="no-bullet">
-              <li class="footer-header">Contact</li>
+              <li class="footer-header">For general information or feedback</li>
               <p class="footer-contact">
-                    For general information or feedback<br />
                     Email address: <a href="mailto:info@cccoer.org">info@cccoer.org</a>, <br />
                     Postal Address:  Open Education Consortium, CCCOER Division<br />
                     60 Thoreau St, Suite 238<br />
