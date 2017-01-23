@@ -17,6 +17,17 @@ $highlightBlue:			#1F71B9;
 .u-background-red 			{ background-color: $highlightRed !important; }
 .u-background-cyan 			{ background-color: $highlightCyan !important; }
 .u-background-lightgreen	{ background-color: $green !important;}
+
+
+/* Utils */
+.flex-container {
+  display: flex;
+}
+
+.flex-dir-column {
+  flex-direction: column;
+}
+
 /* Type */
 
 $helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -354,7 +365,7 @@ li.footer-header {
 
 /* Home - Info */
 .home-info {
-	padding: rem-calc(100) 0 rem-calc(20);
+	padding: rem-calc(100) 0 rem-calc(100);
 	background-image: linear-gradient(270deg, #76CE63 2%, #3A894D 100%);
 
 	@include breakpoint(small only) {
@@ -377,6 +388,10 @@ li.footer-header {
 
 .home-info {
 	color: $white;
+}
+
+.home-info h3 {
+  margin-bottom: rem-calc(36);
 }
 
 /* Home - Social */
@@ -450,7 +465,7 @@ li.footer-header {
 /* Webinars page cards */
 
 .card-boxy {
-	padding-bottom: rem-calc(30);
+  padding-bottom: rem-calc(30);
 }
 
 .card-play {
@@ -544,14 +559,14 @@ li.footer-header {
 }
 
 .subheading-iconbg {
-	height: rem-calc(480);
+	height: rem-calc(360);
 }
 
 .subheading-background-icon {
 	float: right;
-	height: rem-calc(280);
+	height: rem-calc(160);
 
-	margin-top: -40px;
+	margin-top: -10px;
 	opacity: 0.22;
 }
 
@@ -1039,18 +1054,51 @@ body.search .subheading-narrow .post-title {
 }
 
 .person-image img {
-	border-radius: 50%;
-	margin-bottom: rem-calc(20);
+  border-radius: 50%;
+  margin-bottom: rem-calc(20);
 
-	@include breakpoint(medium) {
-		padding: 0 rem-calc(45);
-	}
+  @include breakpoint(medium) {
+      padding: 0 rem-calc(45);
+  }
 }
 
 .person-details, .people-oec-staff {
-	margin-bottom: rem-calc(60);
+  margin-bottom: rem-calc(60);
 }
 .small-text {
-	font-size: 10px;
+  font-size: 10px;
+}
 
+/*
+ * Case studies
+ */
+
+.home .card-casestudy {
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+}
+
+.home .card-casestudy .card-title {
+  margin: rem-calc(0) auto rem-calc(20) auto;
+  font-size: rem-calc(18);
+  font-weight: normal;
+}
+
+.card-casestudy {
+  padding: rem-calc(20) rem-calc(15) 0 rem-calc(15);
+  background-color: $white;
+  border-radius: rem-calc(5);
+}
+
+.card-casestudy__image {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  height: rem-calc(160);
+  align-self: center;
+}
+
+.casestudy__thumbnail {
+  float: left;
+  padding: rem-calc(20) rem-calc(20) rem-calc(40) rem-calc(20);
+  max-width: 300px;
 }

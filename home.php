@@ -38,19 +38,20 @@
         </div>
     </div>
 
-    <?php if ( have_rows('home_panel', 'options') ) : ?>
-        <div class="home-info">
-            <div class="row">
-            <?php while ( have_rows('home_panel', 'options') ) : the_row(); ?>
-                <div class="small-12 medium-6 columns home-info-tile">
-                    <h2 class="home-info-title"><?php the_sub_field('title'); ?></h2>
-                    <p><?php the_sub_field('description'); ?></p>
-                    <a href="<?php the_sub_field('url'); ?>" class="button green-light no-radius text-uppercase">Learn more</a>
-                </div>
-            <?php endwhile; ?>
+    <div class="home-info">
+        <div class="row align-center">
+            <div class="column grow text-center">
+                <h3 class="u-color-white">Case Studies</h3>
             </div>
         </div>
-    <?php endif; ?>
+
+        <div class="row">
+            <?php $casestudy_posts = new WP_Query(array('post_type' => 'casestudy')); ?>
+            <?php while ( $casestudy_posts->have_posts() ) : $casestudy_posts->the_post(); ?>
+                <?php get_template_part('partials/_card', 'casestudy'); ?>
+            <?php endwhile; ?>
+        </div>
+    </div>
 
     <div class="home-social">
         <div class="row align-center">

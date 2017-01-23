@@ -16,17 +16,6 @@
     </div>
     <div class="post-content post-content-single post-content-left-meta row">
         <div class="small-12 medium-1 columns">
-
-            <div class="post-share text-center hide-for-small-only">
-                <span class="post-share-text">Share</span>
-
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-fb2.svg" /></a><br />
-
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg" /></a><br />
-
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-mail2.svg" /></a>
-
-            </div>
         </div>
         <div class="small-12 medium-11 columns post-content-body">
             <?php if ( get_field('webinar_youtube') ) : ?>

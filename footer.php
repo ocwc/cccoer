@@ -14,6 +14,7 @@
               ));
             ?>
 
+          <?php /*
           <div class="small-12 medium-expand columns">
             <ul class="no-bullet">
               <li class="footer-header">For general information or feedback</li>
@@ -25,6 +26,7 @@
               </p>
             </ul>
           </div>
+          */ ?>
 
 
           <div class="small-12 columns text-center footer-oec">
