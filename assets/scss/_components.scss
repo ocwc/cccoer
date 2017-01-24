@@ -1093,7 +1093,7 @@ body.search .subheading-narrow .post-title {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  height: rem-calc(160);
+  min-height: rem-calc(220);
   align-self: center;
 }
 
