@@ -21,7 +21,7 @@
     data-off-canvas-content
 >
 
-    <div class="post-content post-content-single
+    <div class="post-content post-content-single post-content-casestudy-overview
                 <?php if ( get_field('highlight_text') ) : ?>
                     post-content-previous-highlight
                 <?php endif; ?>
@@ -33,8 +33,14 @@
                     <?php the_post_thumbnail(); ?>
                 </div>
 
-                <?php the_content(); ?>
+                <?php the_field('casestudy_overview'); ?>
             </div>
+        </div>
+    </div>
+
+    <div class="post-content post-content-single post-content-notop-margin row">
+        <div class="small-12 columns post-content-body">
+            <?php the_content(); ?>
         </div>
     </div>
 </div>

@@ -590,6 +590,10 @@ li.footer-header {
 	display: none;
 }
 
+.post-content-casestudy-overview {
+	// padding-bottom: 0;
+	margin-bottom: rem-calc(32) !important;
+}
 
 .post-content-single {
 	margin-bottom: rem-calc(90);
@@ -607,6 +611,10 @@ li.footer-header {
 .post-content-notop-borders {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
+}
+
+.post-content-notop-margin {
+	margin-top: 0;
 }
 
 .subheading-image .post-content {
