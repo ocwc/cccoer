@@ -8,7 +8,7 @@
     <div class="small-10 columns">
         <p class="subheading-p"><?php the_field('homepage_header_text', 'options'); ?></p>
 
-        <a href="/about/about-cccoer/" class="button hollow text-uppercase">More about CCCOER</a>
+        <a href="/community-email/#calendar" class="button hollow text-uppercase">Check our Calendar</a>
     </div>
 </div>
 
