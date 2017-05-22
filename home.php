@@ -8,7 +8,10 @@
     <div class="small-10 columns">
         <p class="subheading-p"><?php the_field('homepage_header_text', 'options'); ?></p>
 
-        <a href="/community-email/#calendar" class="button hollow text-uppercase">Check our Calendar</a>
+         <a href="/archives/" class="button hollow text-uppercase">News</a>
+         <a href="/webinar/" class="button hollow text-uppercase">Webinars</a>
+         <a href="/casestudy/" class="button hollow text-uppercase">Case Studies</a>
+         <a href="/community-email/#calendar" class="button hollow text-uppercase">Calendar</a>
     </div>
 </div>
 
