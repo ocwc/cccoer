@@ -11,7 +11,7 @@
          <a href="/archives/" class="button hollow text-uppercase">News</a>
          <a href="/webinar/" class="button hollow text-uppercase">Webinars</a>
          <a href="/casestudy/" class="button hollow text-uppercase">Case Studies</a>
-         <a href="/community-email/#calendar" class="button hollow text-uppercase">Calendar</a>
+         <a href="/events-calendar/" class="button hollow text-uppercase">Calendar</a>
     </div>
 </div>
 
