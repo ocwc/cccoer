@@ -16,8 +16,8 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": "",
-            "max": "",
+            "min": 0,
+            "max": 0,
             "layout": "row",
             "button_label": "Add Person",
             "sub_fields": [
@@ -74,7 +74,7 @@
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
-                        "class": "",
+                        "class": "small-text",
                         "id": ""
                     },
                     "default_value": "",
@@ -93,7 +93,7 @@
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
-                        "class": "",
+                        "class": "small-text",
                         "id": ""
                     },
                     "default_value": "",
@@ -112,7 +112,7 @@
                     "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
-                        "class": "",
+                        "class": "small-text",
                         "id": ""
                     },
                     "default_value": "",
@@ -137,12 +137,13 @@
                     "choices": {
                         "staff": "Staff",
                         "advisory": "Advisory Board Directors",
-                        "emiritus": "Advisory Emeritus"
+                        "emiritus": "Advisory Emeritus",
+                        "council": "Executive Council"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
                     "save_other_choice": 0,
-                    "default_value": "board",
+                    "default_value": "advisory",
                     "layout": "vertical",
                     "return_format": "label"
                 }
@@ -166,5 +167,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1477404740
+    "modified": 1501869168
 }
