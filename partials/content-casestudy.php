@@ -1,5 +1,6 @@
-<?php if ( get_field('header_image') ) : ?>
-    <div class="subheading-bluebg subheading-imagebg" style="background-image: url('<?php echo get_field('header_image')['sizes']['background-poster']; ?>');">
+<?php if ( get_field( 'header_image' ) ) : ?>
+    <div class="subheading-bluebg subheading-imagebg"
+         style="background-image: url('<?php echo get_field( 'header_image' )['sizes']['background-poster']; ?>');">
     </div>
 <?php else : ?>
     <div class="subheading-bluebg">
@@ -12,7 +13,7 @@
 <!-- original content goes in this container -->
 <div
 
-    <?php if ( get_field('header_image') ) : ?>
+    <?php if ( get_field( 'header_image' ) ) : ?>
         class="off-canvas-content subheading-image"
     <?php else : ?>
         class="off-canvas-content subheading-narrow"
@@ -22,18 +23,26 @@
 >
 
     <div class="post-content post-content-single post-content-casestudy-overview
-                <?php if ( get_field('highlight_text') ) : ?>
+                <?php if ( get_field( 'highlight_text' ) ) : ?>
                     post-content-previous-highlight
                 <?php endif; ?>
                 row">
 
         <div class="">
-            <div class="small-12 columns post-content-body">
-                <div class="casestudy__thumbnail">
-                    <?php the_post_thumbnail(); ?>
+            <div class="row post-content-body">
+                <div class="small-3 columns">
+                    <div class="casestudy__thumbnail">
+                        <?php if ( get_field( 'authors_image' ) ) : ?>
+                            <img src="<?= get_field( 'authors_image' )['sizes']['medium']; ?>"/>
+                        <?php else : ?>
+                            <?php the_post_thumbnail(); ?>
+                        <?php endif; ?>
+                    </div>
                 </div>
 
-                <?php the_field('casestudy_overview'); ?>
+                <div class="small-9 columns">
+                    <?php the_field( 'casestudy_overview' ); ?>
+                </div>
             </div>
         </div>
     </div>
