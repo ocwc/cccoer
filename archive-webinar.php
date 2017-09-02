@@ -14,7 +14,6 @@
                     <?php $count = 1; ?>
                     <?php while ( have_posts() ) : the_post(); ?>
                         <?php get_template_part('partials/_card', 'webinar'); ?>
-
                         <?php if ( $count % 4 === 0 ) : ?>
                             <div class="clearfix hide-for-small"></div>
                         <?php endif; ?>

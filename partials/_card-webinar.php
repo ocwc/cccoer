@@ -12,8 +12,12 @@
         </div>
         <div class="card-white">
             <div class="card-title">
+                <div>
+                    <?= get_the_date('F j, Y');  ?><br /><br />
+                </div>
                 <?php the_title(); ?>
             </div>
+
             <!-- <div class="card-meta"><?php the_date('F j, Y');  ?></div> -->
         </div>
     </a>
