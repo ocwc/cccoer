@@ -1165,14 +1165,8 @@ body.search .subheading-narrow .post-title {
 }
 
 .home-quotes-logo {
-  margin-bottom: rem-calc(25);
-}
-
-.home-quotes .intro {
-  margin-bottom: rem-calc(25);
-  color: #545454;
-  font-size: rem-calc(18);
-  text-align: center;
+  margin-bottom: rem-calc(15);
+  max-width: 220px;
 }
 
 .home-quotes h4 {
