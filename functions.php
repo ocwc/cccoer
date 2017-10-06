@@ -22,6 +22,7 @@ function cccoer_setup() {
     add_action( 'init', 'cccoer_menus' );
 
     add_image_size( 'background-poster', 1440, 478, true );
+    add_image_size( 'square', 150, 150, array('center', 'center') );
 }
 add_action( 'after_setup_theme', 'cccoer_setup' );
 

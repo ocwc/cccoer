@@ -2,7 +2,6 @@
 
 // Register Custom Post Type
 function cc_post_type_webinar() {
-
     $labels = array(
         'name'                  => 'Webinars',
         'singular_name'         => 'Webinar',
@@ -147,3 +146,56 @@ function cc_post_type_case_study() {
 
 }
 add_action( 'init', 'cc_post_type_case_study', 0 );
+
+function cc_post_type_quote() {
+    $labels = array(
+        'name'                  => 'Quotes',
+        'singular_name'         => 'Quote',
+        'menu_name'             => 'Quotes',
+        'name_admin_bar'        => 'Quotes',
+        'archives'              => 'Quote Archives',
+        'parent_item_colon'     => 'Parent Item:',
+        'all_items'             => 'All Items',
+        'add_new_item'          => 'Add New Item',
+        'add_new'               => 'Add New Quote',
+        'new_item'              => 'New Quote',
+        'edit_item'             => 'Edit Quote',
+        'update_item'           => 'Update Quote',
+        'view_item'             => 'View Quote',
+        'search_items'          => 'Search Item',
+        'not_found'             => 'Not found',
+        'not_found_in_trash'    => 'Not found in Trash',
+        'featured_image'        => 'Featured Image',
+        'set_featured_image'    => 'Set featured image',
+        'remove_featured_image' => 'Remove featured image',
+        'use_featured_image'    => 'Use as featured image',
+        'insert_into_item'      => 'Insert into item',
+        'uploaded_to_this_item' => 'Uploaded to this item',
+        'items_list'            => 'Items list',
+        'items_list_navigation' => 'Items list navigation',
+        'filter_items_list'     => 'Filter items list',
+    );
+    $args = array(
+        'label'                 => 'Quote',
+        'description'           => 'Quotes',
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'author', 'thumbnail' ),
+        'taxonomies'            => array('post_tag'),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'page',
+        'menu_icon'             => 'dashicons-format-quote'
+    );
+    register_post_type( 'quote', $args );
+
+}
+add_action( 'init', 'cc_post_type_quote', 0 );

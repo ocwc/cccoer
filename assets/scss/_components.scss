@@ -1157,3 +1157,51 @@ body.search .subheading-narrow .post-title {
   padding: rem-calc(20) rem-calc(20) rem-calc(40) rem-calc(20);
   max-width: 300px;
 }
+
+.home-quotes {
+  background: url('../images/10years-background.jpg');
+  padding: rem-calc(20) 0 rem-calc(30);
+}
+
+.home-quotes-logo {
+  margin-bottom: rem-calc(25);
+}
+
+.home-quotes .intro {
+  margin-bottom: rem-calc(25);
+  color: #545454;
+  font-size: rem-calc(18);
+  text-align: center;
+}
+
+.home-quotes h4 {
+  margin-bottom: rem-calc(20);
+  color: #545454;
+  font-size: rem-calc(24);
+  font-weight: bold;
+  text-align: center;
+}
+
+.home-quotes-card {
+  background-color: #E3E1E1;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    background-color: lighten(#E3E1E1, 5%);
+  }
+}
+
+.home-quotes-card .card-title {
+  margin: 0;
+}
+
+.home-quotes-image .wp-post-image {
+  height: 100px !important;
+  width: auto;
+}
+
+.home-quotes-button {
+  margin-top: rem-calc(30);
+  font-size: 18px;
+}

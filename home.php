@@ -2,22 +2,24 @@
 
 <div class="row text-center align-center subheading-nobg">
     <div class="small-12 columns">
-        <h1 class="subheading-nobg-h1"><?php the_field('homepage_header_title', 'options'); ?></h1>
+        <h1 class="subheading-nobg-h1"><?php the_field( 'homepage_header_title', 'options' ); ?></h1>
     </div>
 
     <div class="small-10 columns">
-        <p class="subheading-p"><?php the_field('homepage_header_text', 'options'); ?></p>
+        <p class="subheading-p"><?php the_field( 'homepage_header_text', 'options' ); ?></p>
 
-         <a href="/archives/" class="button hollow text-uppercase">News</a>
-         <a href="/webinar/" class="button hollow text-uppercase">Webinars</a>
-         <a href="/casestudy/" class="button hollow text-uppercase">Case Studies</a>
-         <a href="/events-calendar/" class="button hollow text-uppercase">Calendar</a>
+        <a href="/archives/" class="button hollow text-uppercase">News</a>
+        <a href="/webinar/" class="button hollow text-uppercase">Webinars</a>
+        <a href="/casestudy/" class="button hollow text-uppercase">Case Studies</a>
+        <a href="/events-calendar/" class="button hollow text-uppercase">Calendar</a>
     </div>
 </div>
 
 
 <!-- original content goes in this container -->
 <div class="off-canvas-content" data-off-canvas-content>
+
+    <?php get_template_part('partials/_home', 'quotes'); ?>
 
     <div class="home-collage">
         <div class="row align-center">
@@ -27,8 +29,8 @@
         <div class="collage row">
             <?php $homepage_posts = get_homepage_posts(); ?>
             <?php while ( $homepage_posts->have_posts() ) : $homepage_posts->the_post(); ?>
-                <?php get_template_part('partials/_card', 'homepage'); ?>
-            <?php endwhile ;?>
+                <?php get_template_part( 'partials/_card', 'homepage' ); ?>
+            <?php endwhile; ?>
         </div>
 
         <div class="row align-center">
@@ -49,9 +51,9 @@
         </div>
 
         <div class="row">
-            <?php $casestudy_posts = new WP_Query(array('post_type' => 'casestudy')); ?>
+            <?php $casestudy_posts = new WP_Query( array( 'post_type' => 'casestudy' ) ); ?>
             <?php while ( $casestudy_posts->have_posts() ) : $casestudy_posts->the_post(); ?>
-                <?php get_template_part('partials/_card', 'casestudy'); ?>
+                <?php get_template_part( 'partials/_card', 'casestudy' ); ?>
             <?php endwhile; ?>
         </div>
     </div>
@@ -63,10 +65,12 @@
             </div>
 
             <div class="small-12 columns home-social-icons text-center">
-                <a href="https://twitter.com/cccoer"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg" /></a>
+                <a href="https://twitter.com/cccoer"><img
+                        src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-tw2.svg"/></a>
                 <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-fb2.svg" /></a> -->
                 <!-- <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-slideshare.svg" /></a> -->
-                <a href="https://www.youtube.com/playlist?list=PLze0jtuKTgpFV4M27-g6YojfSMXxIOeVd"><img src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-youtube.svg" /></a>
+                <a href="https://www.youtube.com/playlist?list=PLze0jtuKTgpFV4M27-g6YojfSMXxIOeVd"><img
+                        src="<?php echo get_template_directory_uri(); ?>/images/icons/icon-youtube.svg"/></a>
             </div>
         </div>
         <div class="row">
@@ -74,15 +78,15 @@
                 <p class="text-uppercase">Tweet with us by using #CCCOER</p>
             </div>
 
-            <?php foreach (get_cccoer_tweets() as $tweet) : ?>
+            <?php foreach ( get_cccoer_tweets() as $tweet ) : ?>
                 <div class="small-6 medium-3 columns">
-                    <?php echo do_shortcode("[tweet id='$tweet']"); ?>
+                    <?php echo do_shortcode( "[tweet id='$tweet']" ); ?>
                 </div>
             <?php endforeach; ?>
         </div>
         <div class="row align-center home-social-divider">
             <div class="small-2 columns">
-                <hr />
+                <hr/>
             </div>
         </div>
     </div>
@@ -106,6 +110,6 @@
         </div>
     <?php endif; ?>
     */ ?>
-<!-- </div> -->
+    <!-- </div> -->
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>
