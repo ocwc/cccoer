@@ -10,7 +10,7 @@
 
                 <div class="grid-x grid-margin-x">
                     <?php $quote_posts = new WP_Query( array(
-                        'post_type' => 'quote',
+                        'post_type' => 'retrospective',
                         'posts_per_page' => 3
                     ) ); ?>
                     <?php while ( $quote_posts->have_posts() ) : $quote_posts->the_post(); ?>
