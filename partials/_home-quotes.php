@@ -18,9 +18,12 @@
                     <?php endwhile; ?>
                 </div>
             </div>
+            <?php /*
             <div class="cell expanded text-center">
                 <a href="/retrospective/" class="button secondary home-quotes-button">Browse Retrospectives</a>
             </div>
+       */ ?>
+
         </div>
     </div>
 </div>
