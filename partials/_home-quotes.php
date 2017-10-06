@@ -14,14 +14,17 @@
                 <h4>10-Year Anniversary Retrospectives</h4>
 
                 <div class="grid-x grid-margin-x">
-                    <?php $quote_posts = new WP_Query( array( 'post_type' => 'quote' ) ); ?>
+                    <?php $quote_posts = new WP_Query( array(
+                        'post_type' => 'quote',
+                        'posts_per_page' => 3
+                    ) ); ?>
                     <?php while ( $quote_posts->have_posts() ) : $quote_posts->the_post(); ?>
                         <?php get_template_part( 'partials/_card', 'quote' ); ?>
                     <?php endwhile; ?>
                 </div>
             </div>
             <div class="cell expanded text-center">
-                <a href="/quotes/" class="button secondary home-quotes-button">Browse Retrospectives</a>
+                <a href="/retrospective/" class="button secondary home-quotes-button">Browse Retrospectives</a>
             </div>
         </div>
     </div>

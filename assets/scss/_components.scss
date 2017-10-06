@@ -97,6 +97,7 @@ a img.aligncenter {
   // margin-top: rem-calc(36);
   box-shadow: none;
   background-color: $grey;
+  padding-bottom: rem-calc(36);
 }
 
 .search-nav,
@@ -717,8 +718,8 @@ li.footer-header {
 
 .post-title-container {
   position: relative;
-  margin-top: rem-calc(-520);
-  height: rem-calc(360);
+  margin-top: rem-calc(-200);
+  height: rem-calc(30);
 
   @include breakpoint(small only) {
     margin-top: rem-calc(-440);
@@ -1160,7 +1161,7 @@ body.search .subheading-narrow .post-title {
 
 .home-quotes {
   background: url('../images/10years-background.jpg');
-  padding: rem-calc(20) 0 rem-calc(30);
+  padding: rem-calc(30) 0 rem-calc(30);
 }
 
 .home-quotes-logo {
@@ -1204,4 +1205,13 @@ body.search .subheading-narrow .post-title {
 .home-quotes-button {
   margin-top: rem-calc(30);
   font-size: 18px;
+}
+
+blockquote {
+  border-left: 2px solid #cacaca;
+}
+
+blockquote,
+blockquote p {
+  color: $black;
 }

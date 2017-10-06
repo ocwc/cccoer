@@ -17,11 +17,8 @@
 
 <body <?php body_class(); ?>>
 
-<div class="off-canvas-wrapper">
-  <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-
     <!-- off-canvas title bar for 'small' screen -->
-    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+    <div class="title-bar show-for-small-only" data-responsive-toggle="widemenu" data-hide-for="medium">
       <div class="title-bar-left">
         <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
         <span class="title-bar-title">Community College Consortium for OER</span>

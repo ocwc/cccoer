@@ -3,11 +3,15 @@ var $    = require('gulp-load-plugins')();
 var sourcemaps = require('gulp-sourcemaps');
 var minify = require('gulp-minify');
 var concat = require('gulp-concat');
+var path = require('path');
 
 var sassPaths = [
   'bower_components/foundation-sites/scss',
   'bower_components/motion-ui/src'
 ];
+
+var CONFIG = require('./config.js');
+var JS_DIR = 'bower_components/foundation-sites/dist/js/plugins';
 
 gulp.task('sass', function() {
   return gulp.src('scss/app.scss')
@@ -37,11 +41,19 @@ gulp.task('sass-devel', function() {
     .pipe(gulp.dest('../css'));
 });
 
+gulp.task('javascript:foundation', function () {
+    var JS_FILES = CONFIG.JS_FILES.map(function (item) {
+        return path.join(JS_DIR, item)
+    });
+    return gulp.src(JS_FILES)
+        .pipe(concat('foundation.js'))
+        .pipe(gulp.dest('../js'));
+});
+
+
 gulp.task('compress', function() {
   var files = [
-    'bower_components/what-input/what-input.js',
-    'bower_components/foundation-sites/dist/foundation.js',
-    'bower_components/macy/dist/macy.js', 'js/app.js'
+      'js/app.js'
   ];
 
   return gulp.src(files)
@@ -52,8 +64,8 @@ gulp.task('compress', function() {
 });
 
 
-gulp.task('default', ['sass-devel', 'compress'], function() {
+gulp.task('default', ['build'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
 
-gulp.task('build', ['sass', 'compress']);
+gulp.task('build', ['sass', 'javascript:foundation', 'compress']);

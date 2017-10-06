@@ -30,6 +30,7 @@ function cccoer_scripts() {
     wp_dequeue_style( 'style', get_stylesheet_uri() );
 
     if ( !is_admin() ) {
+        wp_enqueue_script( 'cccoer-foundation', get_template_directory_uri() . '/js/foundation.js', array('jquery'), '', true );
         if ( WP_DEBUG === true ) {
             wp_enqueue_style( 'cccoer-style', get_template_directory_uri().'/css/app.css' );
             wp_enqueue_script( 'cccoer-script', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );

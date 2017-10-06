@@ -46,10 +46,6 @@
         </div>
       </div>
 
-  <!-- close wrapper, no more content after this -->
-  </div>
-</div>
-
   <?php wp_footer(); ?>
 
   </body>
