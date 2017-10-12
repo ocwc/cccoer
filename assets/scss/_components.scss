@@ -1209,3 +1209,7 @@ blockquote,
 blockquote p {
   color: $black;
 }
+
+.post-type-archive-retrospective .home-quotes-card {
+  margin-bottom: rem-calc(15);
+}
