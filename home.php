@@ -79,7 +79,7 @@
             </div>
 
             <?php foreach ( get_cccoer_tweets() as $tweet ) : ?>
-                <div class="small-6 medium-3 columns">
+                <div class="small-12 medium-3 columns">
                     <?php echo do_shortcode( "[tweet id='$tweet']" ); ?>
                 </div>
             <?php endforeach; ?>

@@ -21,7 +21,7 @@
     <div class="title-bar show-for-small-only" data-responsive-toggle="widemenu" data-hide-for="medium">
       <div class="title-bar-left">
         <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
-        <span class="title-bar-title">Community College Consortium for OER</span>
+        <a href="/" class="title-bar-title">CCCOER</a>
       </div>
     </div>
 

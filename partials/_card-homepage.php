@@ -1,4 +1,4 @@
-<div class="small-6 medium-3 columns">
+<div class="small-12 medium-3 columns">
     <a href="<?php the_permalink(); ?>" class="card">
         <?php echo get_the_post_thumbnail(); ?>
         <div class="card-section text-uppercase">

@@ -1,4 +1,4 @@
-<div class="small-6 large-3 columns">
+<div class="small-12 medium-6 large-3 columns">
     <div class="card-boxy card-casestudy">
         <a class="flex-container flex-dir-column" href="<?php the_permalink(); ?>">
             <div class="card-casestudy__image clearfix">

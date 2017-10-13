@@ -735,9 +735,12 @@ li.footer-header {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   line-height: 1.1 !important;
 
+  @include breakpoint(small only) {
+    margin-top: 30px;
+  }
+
   @include breakpoint(medium) {
     font-size: rem-calc(36);
-
   }
 }
 
@@ -1210,6 +1213,6 @@ blockquote p {
   color: $black;
 }
 
-.post-type-archive-retrospective .home-quotes-card {
+.home-quotes-card {
   margin-bottom: rem-calc(15);
 }
