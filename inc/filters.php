@@ -6,3 +6,13 @@ add_filter( 'document_title_parts', function ( $title ) {
     }
     return $title;
 }, 10, 1);
+
+function cccoer_query_vars($query_vars) {
+    /* courses */
+    $query_vars[] = 'webinar_year';
+    $query_vars[] = 'webinar_category';
+    $query_vars[] = 'q';
+
+    return $query_vars;
+}
+add_filter( 'query_vars', 'cccoer_query_vars' );

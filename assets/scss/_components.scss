@@ -1216,3 +1216,30 @@ blockquote p {
 .home-quotes-card {
   margin-bottom: rem-calc(15);
 }
+
+.pagination .current {
+  color: $white;
+}
+
+.webinars-search {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  @include breakpoint(medium) {
+    margin-top: auto;
+    margin-bottom: 80px;
+  }
+
+  form > .row {
+    background-color: aliceblue;
+  }
+}
+
+.webinars-search .button {
+  margin-bottom: 0;
+  width: 100%;
+
+  @include breakpoint(medium) {
+    margin-top: 22px;
+  }
+}
