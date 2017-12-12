@@ -34,7 +34,7 @@ function cccoer_filter_mainquery( $query ) {
             ));
         }
 
-        $webinar_text = get_query_var('q');
+        $webinar_text = get_query_var('webinar_q');
         if ($webinar_text) {
             $query->set('s', $webinar_text);
         }

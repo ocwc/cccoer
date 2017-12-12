@@ -42,7 +42,7 @@
                         <div class="small-12 columns"></div>
                         <div class="small-12 medium-6 columns">
                             <b>Search</b>
-                            <input type="text" name="q" placeholder="Title, presenter, topic .." value="<?= esc_attr(get_query_var('q')); ?>">
+                            <input type="text" name="webinar_q" placeholder="Title, presenter, topic .." value="<?= esc_attr(get_query_var('webinar_q')); ?>">
                         </div>
 
                         <div class="small-12 medium-2 columns">

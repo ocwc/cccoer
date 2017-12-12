@@ -11,7 +11,7 @@ function cccoer_query_vars($query_vars) {
     /* courses */
     $query_vars[] = 'webinar_year';
     $query_vars[] = 'webinar_category';
-    $query_vars[] = 'q';
+    $query_vars[] = 'webinar_q';
 
     return $query_vars;
 }
