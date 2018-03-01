@@ -41,6 +41,8 @@ function cccoer_filter_mainquery( $query ) {
 
     } elseif ( is_tax('webinar_category') ) {
         $query->set('posts_per_page', 16);
+    } elseif ( $query->is_archive() && $query->is_main_query() && is_post_type_archive('retrospective')) {
+        $query->set('posts_per_page', 100);
     }
 
     return $query;
