@@ -42,6 +42,7 @@
 
                 <div class="small-9 columns">
                     <?php the_field( 'casestudy_overview' ); ?>
+                    <b>Published:</b> <?php the_date('F Y'); ?>
                 </div>
             </div>
         </div>
