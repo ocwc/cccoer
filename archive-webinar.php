@@ -26,6 +26,7 @@
                                 <option value="2015" <?= $webinar_year === '2015' ? 'selected' : '' ?>>2015</option>
                                 <option value="2016" <?= $webinar_year === '2016' ? 'selected' : '' ?>>2016</option>
                                 <option value="2017" <?= $webinar_year === '2017' ? 'selected' : '' ?>>2017</option>
+                                <option value="2018" <?= $webinar_year === '2018' ? 'selected' : '' ?>>2018</option>
                                 <!-- <option value="2018">2018</option> -->
                             </select>
                         </div>
