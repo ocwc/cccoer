@@ -3,7 +3,7 @@
         <?php if ( have_rows( 'home_boxbar', 'option' ) ) : ?>
             <?php $c = 1; ?>
 
-            <div class="grid-x grid-margin-x">
+            <div class="grid-x grid-padding-x">
                 <?php while ( have_rows( 'home_boxbar', 'option' ) ) : the_row(); ?>
                     <div class="medium-6 cell clearfix boxbar boxbar-<?= $c; ?>">
                         <h4><?php the_sub_field( 'title' ); ?></h4>

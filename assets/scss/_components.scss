@@ -1257,13 +1257,16 @@ blockquote p {
 
 .boxbar-1 {
   color: #191919;
+
+  @include breakpoint(small only) {
+    background-color: rgb(137, 188, 61);
+  }
 }
 
 .boxbar-2 {
   color: #ffffff;
-}
 
-//.boxbar-2 .button {
-//  color: #1a1a1a;
-//  background-color: #8abc4b;
-//}
+  @include breakpoint(small only) {
+    background-color: rgb(34, 84, 152);
+  }
+}
