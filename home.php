@@ -7,11 +7,13 @@
 
     <div class="small-10 columns">
         <p class="subheading-p"><?php the_field( 'homepage_header_text', 'options' ); ?></p>
-
-        <a href="/archives/" class="button hollow text-uppercase">News</a>
-        <a href="/webinar/" class="button hollow text-uppercase">Webinars</a>
-        <a href="/casestudy/" class="button hollow text-uppercase">Case Studies</a>
-        <a href="/events-calendar/" class="button hollow text-uppercase">Calendar</a>
+        <?php if ( have_rows( 'home_buttons' ) ) : ?>
+            <?php while ( have_rows( 'home_buttons' ) ) : the_row(); ?>
+                <a href="<?php the_sub_field( 'link' ); ?>" class="button hollow text-uppercase"><?php the_sub_field( 'name' ); ?></a>
+            <?php endwhile; ?>
+        <?php else : ?>
+            <?php // no rows found ?>
+        <?php endif; ?>
     </div>
 </div>
 

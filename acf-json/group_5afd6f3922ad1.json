@@ -1,11 +1,11 @@
 {
-    "key": "group_57c82e56865b9",
-    "title": "Home - Information Panels",
+    "key": "group_5afd6f3922ad1",
+    "title": "Home - Buttons",
     "fields": [
         {
-            "key": "field_57c82e69c6211",
-            "label": "Information Panel",
-            "name": "home_panel",
+            "key": "field_5afd6f3d0ac7c",
+            "label": "Buttons on top",
+            "name": "home_buttons",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -16,15 +16,15 @@
                 "id": ""
             },
             "collapsed": "",
-            "min": "",
-            "max": 4,
+            "min": 0,
+            "max": 0,
             "layout": "table",
-            "button_label": "Add Row",
+            "button_label": "",
             "sub_fields": [
                 {
-                    "key": "field_57c82e7fc6212",
-                    "label": "Title",
-                    "name": "title",
+                    "key": "field_5afd6f4b0ac7d",
+                    "label": "Name",
+                    "name": "name",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -41,28 +41,9 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_57c82e92c6213",
-                    "label": "Description",
-                    "name": "description",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
-                    "key": "field_57c82ea8c6214",
-                    "label": "URL",
-                    "name": "url",
+                    "key": "field_5afd6f530ac7e",
+                    "label": "Link",
+                    "name": "link",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -84,13 +65,13 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "post_type",
                 "operator": "==",
-                "value": "theme-homepage-settings"
+                "value": "post"
             }
         ]
     ],
-    "menu_order": 10,
+    "menu_order": 0,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -98,5 +79,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1472736984
+    "modified": 1526558561
 }
