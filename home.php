@@ -7,8 +7,8 @@
 
     <div class="small-10 columns">
         <p class="subheading-p"><?php the_field( 'homepage_header_text', 'options' ); ?></p>
-        <?php if ( have_rows( 'home_buttons' ) ) : ?>
-            <?php while ( have_rows( 'home_buttons' ) ) : the_row(); ?>
+        <?php if ( have_rows( 'home_buttons', 'option' ) ) : ?>
+            <?php while ( have_rows( 'home_buttons', 'option' ) ) : the_row(); ?>
                 <a href="<?php the_sub_field( 'link' ); ?>" class="button hollow text-uppercase"><?php the_sub_field( 'name' ); ?></a>
             <?php endwhile; ?>
         <?php else : ?>
