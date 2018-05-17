@@ -1243,3 +1243,27 @@ blockquote p {
     margin-top: 22px;
   }
 }
+
+.boxbar-container {
+  @include breakpoint(medium) {
+    background: linear-gradient(to right, rgba(137, 188, 61, 1) 0%, rgba(137, 188, 61, 1) 50%, rgba(34, 84, 152, 1) 50%, rgba(34, 84, 152, 1) 100%);
+  }
+}
+
+.boxbar {
+  padding: 20px 10px 20px;
+  text-align: center;
+}
+
+.boxbar-1 {
+  color: #191919;
+}
+
+.boxbar-2 {
+  color: #ffffff;
+}
+
+//.boxbar-2 .button {
+//  color: #1a1a1a;
+//  background-color: #8abc4b;
+//}

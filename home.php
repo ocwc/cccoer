@@ -21,7 +21,7 @@
 <!-- original content goes in this container -->
 <div class="off-canvas-content" data-off-canvas-content>
 
-    <?php get_template_part('partials/_home', 'quotes'); ?>
+    <?php get_template_part('partials/_home', 'boxbar'); ?>
 
     <div class="home-collage">
         <div class="row align-center">
