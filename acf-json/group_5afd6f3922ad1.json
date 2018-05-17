@@ -65,9 +65,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "post"
+                "value": "theme-homepage-settings"
             }
         ]
     ],
@@ -79,5 +79,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1526558561
+    "modified": 1526559149
 }
