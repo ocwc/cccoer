@@ -1,5 +1,5 @@
 $grey: #D2D2D2;
-$green: #6DC15F;
+$green: #6ba035;
 
 $highlightGreen: #91C855;
 $highlightOrange: #FFBE62;
@@ -1246,25 +1246,29 @@ blockquote p {
 
 .boxbar-container {
   @include breakpoint(medium) {
-    background: linear-gradient(to right, rgba(137, 188, 61, 1) 0%, rgba(137, 188, 61, 1) 50%, rgba(34, 84, 152, 1) 50%, rgba(34, 84, 152, 1) 100%);
+    background: linear-gradient(to right, rgba($green, 1) 0%, rgba($green, 1) 50%, rgba(34, 84, 152, 1) 50%, rgba(34, 84, 152, 1) 100%);
   }
 }
 
 .boxbar {
-  padding: 20px 10px 20px;
+  padding: 10px 10px 20px;
   text-align: center;
 }
 
+.boxbar .button {
+  margin-bottom: 0;
+}
+
 .boxbar-1 {
-  color: #191919;
+  color: $white;
 
   @include breakpoint(small only) {
-    background-color: rgb(137, 188, 61);
+    background-color: $green;
   }
 }
 
 .boxbar-2 {
-  color: #ffffff;
+  color: $white;
 
   @include breakpoint(small only) {
     background-color: rgb(34, 84, 152);
