@@ -27,12 +27,13 @@ function cccoer_setup() {
 add_action( 'after_setup_theme', 'cccoer_setup' );
 
 function cccoer_scripts() {
-    wp_dequeue_style( 'style', get_stylesheet_uri() );
+    $theme = wp_get_theme();
+    wp_dequeue_style( 'style');
 
     if ( !is_admin() ) {
         wp_enqueue_script( 'cccoer-foundation', get_template_directory_uri() . '/js/foundation.js', array('jquery'), '', true );
         if ( WP_DEBUG === true ) {
-            wp_enqueue_style( 'cccoer-style', get_template_directory_uri().'/css/app.css' );
+            wp_enqueue_style( 'cccoer-style', get_template_directory_uri().'/css/app.css', '' );
             wp_enqueue_script( 'cccoer-script', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
         } else {
             wp_enqueue_style( 'cccoer-style', get_template_directory_uri().'/css/app.css' );

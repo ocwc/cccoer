@@ -53,7 +53,7 @@
         </div>
 
         <div class="row">
-            <?php $casestudy_posts = new WP_Query( array( 'post_type' => 'casestudy' ) ); ?>
+            <?php $casestudy_posts = new WP_Query( array( 'post_type' => 'casestudy', 'posts_per_page' => 16 ) ); ?>
             <?php while ( $casestudy_posts->have_posts() ) : $casestudy_posts->the_post(); ?>
                 <?php get_template_part( 'partials/_card', 'casestudy' ); ?>
             <?php endwhile; ?>
