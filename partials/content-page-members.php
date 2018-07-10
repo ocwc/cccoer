@@ -42,7 +42,7 @@
                         <div class="small-3 columns members-single-member text-center">
                             <?php if ( $member->logo_large ) : ?>
                                 <a href="<?php echo $member->main_website; ?>   ">
-                                    <img class="member-logo" src="https://members.oeconsortium.org/media/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
+                                    <img class="member-logo" src="https://members.oeconsortium.org/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
                                 </a>
                             <?php endif; ?>
 
