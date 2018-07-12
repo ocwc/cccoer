@@ -1265,6 +1265,17 @@ blockquote p {
   @include breakpoint(small only) {
     background-color: $green;
   }
+
+  a {
+    color: $white;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: $white;
+    text-decoration: underline;
+  }
 }
 
 .boxbar-2 {
@@ -1272,5 +1283,16 @@ blockquote p {
 
   @include breakpoint(small only) {
     background-color: rgb(34, 84, 152);
+  }
+
+  a {
+    color: $white;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    color: $white;
+    text-decoration: underline;
   }
 }
