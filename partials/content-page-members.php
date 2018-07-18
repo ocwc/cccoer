@@ -40,21 +40,29 @@
 
 
                         <div class="small-3 columns members-single-member text-center">
-                            <?php if ( $member->logo_large ) : ?>
-                                <a href="<?php echo $member->main_website; ?>   ">
+                            <?php
+                                $link = null;
+                                if ( $member->ocw_website ) {
+                                    $link = $member->ocw_website;
+                                } elseif ( $member->main_website ) {
+                                    $link = $member->main_website;
+                                }
+                            ?>
+                            <?php if ( $link ) : ?>
+                                <a href="<?= $link ?>">
                                     <img class="member-logo" src="https://members.oeconsortium.org/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
                                 </a>
+                            <?php else: ?>
+                                <img class="member-logo" src="https://members.oeconsortium.org/<?php echo $member->logo_large; ?>" alt="<?php echo $member->name; ?> logo">
                             <?php endif; ?>
 
-                            <?php if ( $member->main_website ) : ?>
-                                <a class="member-name" href="<?php echo $member->main_website; ?>"><?php echo $member->name; ?></a>
+                            <?php if ( $link ) : ?>
+                                <a class="member-name" href="<?= $link; ?>"><?php echo $member->name; ?></a>
                             <?php else : ?>
                                 <span class="member-name"><?php echo $member->name; ?></span>
                             <?php endif; ?>
                             <br /><br />
                         </div>
-
-                    <?php ///var_dump($member); ?>
                 <?php endforeach; ?>
             </div>
         </div>
