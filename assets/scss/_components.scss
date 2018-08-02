@@ -1296,3 +1296,21 @@ blockquote p {
     text-decoration: underline;
   }
 }
+
+#members-map {
+  height: 400px;
+  width: 100%;
+}
+
+.page-template-page-members .twitter-share {
+  display: none;
+}
+
+.members-counter {
+  padding-top: 120px;
+  background-color: #cad2d3;
+}
+
+.members-toc {
+  margin: 30px auto;
+}
