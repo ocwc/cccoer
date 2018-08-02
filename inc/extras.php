@@ -11,6 +11,19 @@ function get_cccoer_members() {
     return $object;
 }
 
+function get_cccoer_member_detail() {
+    $member_id = get_query_var('member_id');
+
+    $url = "https://members.oeconsortium.org/api/v1/organization/view/$member_id/?format=json";
+    $result = wp_remote_get( $url );
+    $response = wp_remote_retrieve_body( $result );
+    $response = json_decode($response);
+
+    if ($response->associate_consortium === 'CCCOER') {
+        return $response;
+    }
+}
+
 function get_cccoer_tweets() {
     if ( get_transient('tweets') !== false ) {
         return get_transient('tweets');

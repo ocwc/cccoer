@@ -13,6 +13,8 @@ function cccoer_query_vars($query_vars) {
     $query_vars[] = 'webinar_category';
     $query_vars[] = 'webinar_q';
 
+    $query_vars[] = 'member_id';
+
     return $query_vars;
 }
 add_filter( 'query_vars', 'cccoer_query_vars' );

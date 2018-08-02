@@ -9,7 +9,24 @@ function cccoer_menus() {
       'footer' => 'Footer',
     )
   );
+}
 
+function cccoer_url_rewrite_templates() {
+    global $wp_query;
+
+    if ( get_query_var( 'member_id' ) ) {
+        add_filter( 'template_include', function() {
+            return get_template_directory() . '/pages/member-detail.php';
+        });
+    }
+}
+add_action( 'template_redirect', 'cccoer_url_rewrite_templates' );
+
+function cccoer_rewrites() {
+    add_rewrite_rule(
+        'about/members/(\w+)/?$',
+        'index.php?member_id=$matches[1]',
+        'top' );
 }
 
 function cccoer_setup() {
@@ -20,6 +37,7 @@ function cccoer_setup() {
     add_theme_support( 'title-tag' );
     add_theme_support( 'html5', array( 'search-form' ) );
     add_action( 'init', 'cccoer_menus' );
+    add_action( 'init', 'cccoer_rewrites' );
 
     add_image_size( 'background-poster', 1440, 478, true );
     add_image_size( 'square', 150, 150, array('center', 'center') );

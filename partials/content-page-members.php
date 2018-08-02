@@ -81,31 +81,14 @@ foreach ( $states as $state ) {
 
 
                     <div class="small-3 columns members-single-member text-center">
-                        <?php
-                        $link = null;
-                        if ( $member->ocw_website ) {
-                            $link = $member->ocw_website;
-                        } elseif ( $member->main_website ) {
-                            $link = $member->main_website;
-                        }
-                        ?>
-                        <?php if ( $link ) : ?>
-                            <a href="<?= $link ?>">
-                                <img class="member-logo"
-                                     src="https://members.oeconsortium.org/<?php echo $member->logo_large; ?>"
-                                     alt="<?php echo $member->name; ?> logo">
-                            </a>
-                        <?php else: ?>
+                        <?php $link = '/about/members/' . $member->id; ?>
+                        <a href="<?= $link ?>">
                             <img class="member-logo"
                                  src="https://members.oeconsortium.org/<?php echo $member->logo_large; ?>"
                                  alt="<?php echo $member->name; ?> logo">
-                        <?php endif; ?>
+                        </a>
 
-                        <?php if ( $link ) : ?>
-                            <a class="member-name" href="<?= $link; ?>"><?php echo $member->name; ?></a>
-                        <?php else : ?>
-                            <span class="member-name"><?php echo $member->name; ?></span>
-                        <?php endif; ?>
+                        <a class="member-name" href="<?= $link; ?>"><?php echo $member->name; ?></a>
                         <br/><br/>
                     </div>
                 <?php endforeach; ?>
