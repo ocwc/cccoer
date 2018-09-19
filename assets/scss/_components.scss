@@ -416,7 +416,10 @@ li.footer-header {
   font-size: rem-calc(18);
   line-height: 1.4;
   padding: rem-calc(13) rem-calc(10) rem-calc(25) rem-calc(13);
+}
 
+.card-title-short {
+  min-height: 100px;
 }
 
 .card-meta {

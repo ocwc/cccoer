@@ -5,7 +5,7 @@
                 <?php echo get_the_post_thumbnail(); ?>
             </div>
             <div class="card-white">
-                <div class="card-title">
+                <div class="card-title card-title-short">
                       <?php the_title(); ?>
                 </div>
             </div>
