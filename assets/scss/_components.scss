@@ -377,6 +377,10 @@ li.footer-header {
   padding-bottom: rem-calc(11);
 }
 
+.collage .card {
+  min-height: 350px;
+}
+
 .card {
   display: block;
   margin-bottom: rem-calc(28);
@@ -385,6 +389,14 @@ li.footer-header {
   background-color: $white;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card:hover, .card:active {
@@ -400,8 +412,11 @@ li.footer-header {
 }
 
 .card-title {
+  min-height: 150px;
   font-size: rem-calc(18);
-  margin: rem-calc(13) rem-calc(13) rem-calc(25) rem-calc(13)
+  line-height: 1.4;
+  padding: rem-calc(13) rem-calc(10) rem-calc(25) rem-calc(13);
+
 }
 
 .card-meta {

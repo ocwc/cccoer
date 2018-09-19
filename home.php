@@ -28,11 +28,13 @@
             <h3 class="u-color-white">News &amp; Webinars</h3>
         </div>
 
-        <div class="collage row">
-            <?php $homepage_posts = get_homepage_posts(); ?>
-            <?php while ( $homepage_posts->have_posts() ) : $homepage_posts->the_post(); ?>
-                <?php get_template_part( 'partials/_card', 'homepage' ); ?>
-            <?php endwhile; ?>
+        <div class="grid-container">
+            <div class="collage grid-x grid-margin-x">
+                <?php $homepage_posts = get_homepage_posts(); ?>
+                <?php while ( $homepage_posts->have_posts() ) : $homepage_posts->the_post(); ?>
+                    <?php get_template_part( 'partials/_card', 'homepage' ); ?>
+                <?php endwhile; ?>
+            </div>
         </div>
 
         <div class="row align-center">

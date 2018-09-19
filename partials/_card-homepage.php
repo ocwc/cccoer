@@ -1,6 +1,6 @@
-<div class="small-12 medium-3 columns">
+<div class="small-6 medium-4 large-3 cell">
     <a href="<?php the_permalink(); ?>" class="card">
-        <?php echo get_the_post_thumbnail(); ?>
+        <div class="card-image" style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>')"></div>
         <div class="card-section text-uppercase">
             <?php if ( get_post_type() === 'webinar' ) : ?>
                 <i class="icon-camera"></i> Webinar
