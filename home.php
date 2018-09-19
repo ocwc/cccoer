@@ -5,7 +5,7 @@
         <h1 class="subheading-nobg-h1"><?php the_field( 'homepage_header_title', 'options' ); ?></h1>
     </div>
 
-    <div class="small-10 columns">
+    <div class="small-12 medium-10 large-8 columns">
         <p class="subheading-p"><?php the_field( 'homepage_header_text', 'options' ); ?></p>
         <?php if ( have_rows( 'home_buttons', 'option' ) ) : ?>
             <?php while ( have_rows( 'home_buttons', 'option' ) ) : the_row(); ?>

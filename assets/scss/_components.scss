@@ -96,7 +96,7 @@ a img.aligncenter {
 .off-canvas-content, .off-canvas-content {
   // margin-top: rem-calc(36);
   box-shadow: none;
-  background-color: $grey;
+  background-color: #f1f1f1;
   padding-bottom: rem-calc(36);
 }
 
@@ -120,9 +120,14 @@ a img.aligncenter {
   margin-right: rem-calc(5);
 }
 
-.icon-twitter,
-.icon-facebook {
+.icon-twitter {
   font-size: rem-calc(16);
+  color: #00aced;
+}
+
+.icon-youtube-play {
+  font-size: rem-calc(16);
+  color: #f00;
 }
 
 .search-nav a:hover .icon-search {
@@ -1312,6 +1317,12 @@ blockquote p {
   a:active {
     color: $white;
     text-decoration: underline;
+  }
+}
+
+.boxbar-grid > .cell {
+  @include breakpoint(small only) {
+    padding: 0;
   }
 }
 
