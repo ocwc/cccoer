@@ -213,7 +213,8 @@ li.footer-header {
   background-color: $green;
 }
 
-.menu .is-active a {
+.menu .is-active a,
+.dropdown.menu .is-active > a {
   color: $white;
 }
 
