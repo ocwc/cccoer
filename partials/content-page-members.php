@@ -42,11 +42,14 @@ foreach ( $states as $state ) {
     <div class="post-content post-content-single row">
         <div class="small-12 columns post-content-body">
             <div class="row collapse">
-                <div class="small-12 medium-8 columns">
-                    <div id="members-map"></div>
-                </div>
                 <div class="small-12 medium-4 columns members-counter text-center text-uppercase">
                     <h1><b><?= count( $members ); ?> members</b><br/><b><?= count( $states ); ?> states</b></h1>
+
+                    <div id="members-map-hawaii" class="hide-for-small-only"></div>
+                </div>
+                <div class="small-12 medium-8 columns">
+                    <div id="members-map"></div>
+
                 </div>
             </div>
 

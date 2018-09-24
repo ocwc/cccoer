@@ -11,14 +11,22 @@ jQuery(document).ready(function ($) {
             minZoom: 3
         });
 
+        var mapHawaii = new mapboxgl.Map({
+            container: 'members-map-hawaii',
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [-157.9838322, 21.392589],
+            zoom: 4,
+            maxZoom: 5,
+            minZoom: 1
+        });
+
         map.on('load', function () {
             $.ajax({
                 dataType: "jsonp",
                 url: 'https://members.oeconsortium.org/api/v1/address/list/geo/consortium/CCCOER/',
                 data: {format: 'jsonp'},
                 success: function (geoJsonData) {
-                    console.log(geoJsonData);
-                    map.addLayer({
+                    var layerOptions = {
                         "id": "members",
                         "type": "circle",
                         "source": {
@@ -36,7 +44,9 @@ jQuery(document).ready(function ($) {
                             "circle-stroke-color": "#4171DD",
                             "circle-stroke-opacity": 0.8
                         }
-                    });
+                    };
+                    map.addLayer(layerOptions);
+                    mapHawaii.addLayer(layerOptions);
                 }
             });
         });
