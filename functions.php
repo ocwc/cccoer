@@ -74,7 +74,7 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 function get_homepage_posts() {
-    $args = array('post_type' => array('post', 'webinar'),
+    $args = array('post_type' => array('post', 'webinar', 'studentstory'),
                   'posts_per_page' => 12);
     return new WP_Query($args);
 }
