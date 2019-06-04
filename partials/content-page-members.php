@@ -85,10 +85,14 @@ foreach ( $states as $state ) {
 
                     <div class="small-3 columns members-single-member text-center">
                         <?php $link = '/about/members/' . $member->id; ?>
-                        <a href="<?= $link ?>">
-                            <img class="member-logo"
+                        <a class="member-logo" href="<?= $link ?>">
+                            <img class=""
                                  src="https://members.oeconsortium.org/<?php echo $member->logo_large; ?>"
                                  alt="<?php echo $member->name; ?> logo">
+
+                            <div class="member-readmore">
+                                <span>Read more...</span>
+                            </div>
                         </a>
 
                         <a class="member-name" href="<?= $link; ?>"><?php echo $member->name; ?></a>

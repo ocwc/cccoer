@@ -1053,15 +1053,59 @@ body.search .subheading-narrow .post-title {
 }
 
 .post-content .member-logo {
+  position: relative;
+  display: block;
   padding: rem-calc(5);
   border: 1px solid $grey;
   border-radius: rem-calc(5);
   margin-bottom: rem-calc(15);
+  overflow: hidden;
 }
 
 .post-content .member-name {
   color: $black;
   line-height: rem-calc(20);
+}
+
+.post-content .member-readmore {
+  display: none;
+}
+
+.post-content .members-single-member:hover  {
+  .member-logo:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background-color: rgba(0, 2, 5, .50);
+  }
+
+  .member-readmore {
+    position: absolute;
+    display: block;
+    bottom: -70px;
+    left: calc(50% - 60px);
+    z-index: 20;
+
+    background-color: #0B42A8;
+    border-radius: 100%;
+    width: 122px;
+    height: 122px;
+
+    color: $white;
+  }
+
+  .member-readmore > span {
+    position: absolute;
+    bottom: 75px;
+    width: 100px;
+    left: calc(50% - 50px);
+    font-size: 14px;
+  }
 }
 
 /*
