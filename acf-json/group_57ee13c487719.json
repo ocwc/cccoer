@@ -136,16 +136,18 @@
                     },
                     "choices": {
                         "staff": "Staff",
-                        "advisory": "Advisory Board Directors",
+                        "board": "Advisory Board",
                         "emiritus": "Advisory Emeritus",
-                        "council": "Executive Council"
+                        "council": "Executive Council",
+                        "professional": "Professional Development Committee",
+                        "special": "Special Projects Committee"
                     },
                     "allow_null": 0,
                     "other_choice": 0,
-                    "save_other_choice": 0,
-                    "default_value": "advisory",
+                    "default_value": "board",
                     "layout": "vertical",
-                    "return_format": "label"
+                    "return_format": "label",
+                    "save_other_choice": 0
                 }
             ]
         }
@@ -167,5 +169,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1501869168
+    "modified": 1559842265
 }
