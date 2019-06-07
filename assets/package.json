@@ -30,7 +30,7 @@
     "gulp-minify": "0.0.14",
     "gulp-sourcemaps": "^1.6.0"
   },
-  "toolchain": {
+  "volta": {
     "node": "6.17.1",
     "yarn": "1.16.0"
   }
