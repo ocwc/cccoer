@@ -29,5 +29,9 @@
     "gulp-concat": "^2.6.0",
     "gulp-minify": "0.0.14",
     "gulp-sourcemaps": "^1.6.0"
+  },
+  "toolchain": {
+    "node": "6.17.1",
+    "yarn": "1.16.0"
   }
 }
