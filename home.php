@@ -39,7 +39,7 @@
 
         <div class="row align-center">
             <div class="medium-3 columns">
-                <a href="/archives/" class="button hollow expanded white text-uppercase">View News Archives</a>
+                <a href="/news/" class="button hollow expanded white text-uppercase">View News Archives</a>
             </div>
             <div class="medium-3 columns">
                 <a href="/webinar/" class="button hollow expanded white text-uppercase">View All Webinars</a>
