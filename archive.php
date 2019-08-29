@@ -7,7 +7,7 @@ get_header(); ?>
 
 <div class="subheading-bluebg">
     <div class="row">
-        <h1 class="post-title-top u-color-white"><?php the_archive_title(); ?></h1>
+        <h1 class="post-title-top u-color-white"><?php the_title(); ?></h1>
     </div>
 </div>
 
