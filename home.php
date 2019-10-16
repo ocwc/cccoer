@@ -25,7 +25,7 @@
 
     <div class="home-collage">
         <div class="row align-center">
-            <h3 class="u-color-white">News &amp; Webinars</h3>
+            <h3 class="u-color-white">News &amp Webinars</h3>
         </div>
 
         <div class="grid-container">
@@ -55,10 +55,14 @@
         </div>
 
         <div class="row">
-            <?php $casestudy_posts = new WP_Query( array( 'post_type' => 'casestudy', 'posts_per_page' => 16 ) ); ?>
+            <?php $casestudy_posts = new WP_Query( array( 'post_type' => 'casestudy', 'posts_per_page' => 4 ) ); ?>
             <?php while ( $casestudy_posts->have_posts() ) : $casestudy_posts->the_post(); ?>
                 <?php get_template_part( 'partials/_card', 'casestudy' ); ?>
             <?php endwhile; ?>
+        </div>
+
+        <div class="row align-center home-casestudy-more">
+            <a href="/casestudy/" class="button text-uppercase">View All Case Studies</a>
         </div>
     </div>
 
