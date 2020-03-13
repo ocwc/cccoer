@@ -30,7 +30,7 @@
 
 
           <div class="small-12 columns text-center footer-oec">
-            <a href="http://www.oeconsortium.org"><img src="<?php echo get_template_directory_uri(); ?>/images/oec-logo.svg" alt="OEC Logo" /></a>
+            <a href="https://www.oeglobal.org"><img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/images/oeglobal.svg" alt="OE Global Logo" /></a>
           </div>
 
           <div class="small-12 medium-6 medium-offset-3 small-centered footer-license text-center">

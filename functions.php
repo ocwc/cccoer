@@ -75,7 +75,7 @@ if( function_exists('acf_add_options_page') ) {
 
 function get_homepage_posts() {
     $args = array('post_type' => array('post', 'webinar', 'studentstory'),
-                  'posts_per_page' => 12);
+                  'posts_per_page' => 8);
     return new WP_Query($args);
 }
 
@@ -89,3 +89,4 @@ require_once( get_template_directory() . '/inc/actions.php' );
 require_once( get_template_directory() . '/inc/opengraph.php' );
 require_once( get_template_directory() . '/inc/extras.php' );
 require_once( get_template_directory() . '/inc/post_types.php' );
+require_once( get_template_directory() . '/inc/acf.php' );

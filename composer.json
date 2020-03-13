@@ -1,5 +1,6 @@
 {
     "require": {
-        "abraham/twitteroauth": "^0.6.4"
+        "abraham/twitteroauth": "^0.6.4",
+        "stoutlogic/acf-builder": "^1.9"
     }
 }

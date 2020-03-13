@@ -21,7 +21,7 @@
 <!-- original content goes in this container -->
 <div class="off-canvas-content" data-off-canvas-content>
 
-    <?php get_template_part('partials/_home', 'boxbar'); ?>
+    <?php get_template_part('partials/_home', 'featured'); ?>
 
     <div class="home-collage">
         <div class="row align-center">
@@ -39,10 +39,10 @@
 
         <div class="row align-center">
             <div class="medium-3 columns">
-                <a href="/news/" class="button hollow expanded white text-uppercase">View News Archives</a>
+                <a href="/news/" class="button grey expanded text-uppercase">View News Archives</a>
             </div>
             <div class="medium-3 columns">
-                <a href="/webinar/" class="button hollow expanded white text-uppercase">View All Webinars</a>
+                <a href="/webinar/" class="button grey expanded  text-uppercase">View All Webinars</a>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
     <div class="home-info">
         <div class="row align-center">
             <div class="column grow text-center">
-                <h3 class="u-color-white">Case Studies</h3>
+                <h3 class="u-color-textgreen">Case Studies</h3>
             </div>
         </div>
 
@@ -62,7 +62,7 @@
         </div>
 
         <div class="row align-center home-casestudy-more">
-            <a href="/casestudy/" class="button text-uppercase">View All Case Studies</a>
+            <a href="/casestudy/" class="button grey text-uppercase">View All Case Studies</a>
         </div>
     </div>
 

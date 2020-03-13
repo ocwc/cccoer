@@ -1,12 +1,4 @@
 $grey: #D2D2D2;
-$green: #6ba035;
-
-$highlightGreen: #91C855;
-$highlightOrange: #FFBE62;
-$highlightDarkGreen: #417505;
-$highlightRed: #D66976;
-$highlightCyan: #3AC4AE;
-$highlightBlue: #1F71B9;
 
 /* Background colors */
 
@@ -58,6 +50,10 @@ $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 .u-color-white {
   color: $white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+.u-color-textgreen {
+  color: $greenText;
 }
 
 img.alignright {
@@ -145,11 +141,12 @@ body {
 
 /* Footer */
 .footer-wrapper {
-  background-color: $white;
+  background-color: #ffffff;
 }
 
 .footer {
-  padding-top: rem-calc(45);
+  padding-top: rem-calc(35);
+  padding-bottom: rem-calc(10);
 }
 
 .footer li,
@@ -188,10 +185,20 @@ li.footer-header {
   color: $blue;
 }
 
+.footer-logo {
+  max-height: 166px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
 /* Header */
 .header {
   margin-top: rem-calc(7);
   margin-bottom: rem-calc(25);
+}
+
+.logo-container img {
+  max-height: 63px;
 }
 
 /* Menu */
@@ -209,25 +216,25 @@ li.footer-header {
 }
 
 .menu .is-active,
-.menu .is-active .menu {
-  background-color: $green;
+.menu .is-active {
+  background-color: $greenMenu;
 }
 
 .menu .is-active a,
 .dropdown.menu .is-active > a {
-  color: $white;
+  color: $greenText;
 }
 
 .menu .is-active li:hover {
-  background-color: $greenDark;
+  background-color: $greenMenu;
 }
 
 .menu .is-active li:hover a {
-  color: $white;
+  color: $greenText;
 }
 
 .menu.submenu a {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .is-dropdown-submenu {
@@ -299,6 +306,18 @@ li.footer-header {
 
 .button.green-light:hover, .button.green-light:focus {
   background-color: #B1D764;
+}
+
+.button.grey {
+  background-color: $grey;
+  color: $greyText;
+}
+
+.button.grey:hover,
+.button.grey:focus {
+  background-color: $greenHover;
+  color: $greenHoverText;
+  text-decoration: underline;
 }
 
 .button-flat {
@@ -375,7 +394,7 @@ li.footer-header {
 .home-collage {
   padding-top: rem-calc(30);
   padding-bottom: rem-calc(11);
-  background-image: linear-gradient(270deg, #4171DD 1%, #1F3EB9 100%);
+  background-color: $blueDark;
 }
 
 .collage {
@@ -438,7 +457,7 @@ li.footer-header {
 /* Home - Info */
 .home-info {
   padding: rem-calc(100) 0 rem-calc(48);
-  background-image: linear-gradient(270deg, #76CE63 2%, #3A894D 100%);
+  background-color: $green;
 
   @include breakpoint(small only) {
     padding: rem-calc(32) 0 rem-calc(16);
@@ -1321,7 +1340,7 @@ blockquote p {
 
 .boxbar-container {
   @include breakpoint(medium) {
-    background: linear-gradient(to right, rgba($green, 1) 0%, rgba($green, 1) 50%, rgba(34, 84, 152, 1) 50%, rgba(34, 84, 152, 1) 100%);
+    background: linear-gradient(to right, rgba($green, 1) 0%, rgba($green, 1) 50%, rgba(13, 89, 242, 1) 50%, rgba(13, 89, 242, 1) 100%);
   }
 }
 
@@ -1379,6 +1398,50 @@ blockquote p {
   }
 }
 
+/* Highlights */
+
+.highlight-container {
+  border-radius: 4px;
+  margin: 16px auto;
+  padding: 29px 24px;
+}
+
+.highlight-container__inner {
+  background-color: $white;
+  padding: 40px 32px;
+
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50), 1px 2px 19px -7px rgba(0,0,0,0.41);
+  border-radius: 4px;
+}
+
+.highlight-container__inner img {
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.highlight-container .button {
+  margin-top: 40px;
+}
+
+.highlight-bg-green {
+  background-color: $highlightGreen;
+}
+
+.highlight-bg-blue {
+  background-color: $highlightBlue;
+}
+
+.highlight-bg-yellow {
+  background-color: $higlightYellow;
+}
+
+.highlight-bg-red {
+  background-color: $highlightRed;
+}
+
+
+/* Members listing */
+
 #members-map {
   height: 400px;
   width: 100%;
@@ -1401,4 +1464,39 @@ blockquote p {
 
 .members-toc {
   margin: 30px auto;
+}
+
+/* Global header */
+.global-header {
+  border: 0 solid #e2e8f0;
+  background-color: #195bb3;
+  //flex-direction: row;
+  //align-items: center;
+  //justify-content: flex-end;
+  font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  line-height: 2;
+  text-align: right;
+  text-transform: uppercase;
+  width: 100%;
+  //display: flex;
+  height: 1.5rem;
+  font-size: .75rem;
+}
+
+.global-header__item {
+  display: inline-flex;
+  color: #fff;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.global-header__item.active, .global-header__item:active, .global-header__item:hover {
+  background-color: #3d7af5;
+  color: $white;
+  text-decoration: none;
 }

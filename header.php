@@ -41,6 +41,8 @@
       ?>
     </div>
 
+    <?php get_template_part('partials/_global', 'banner'); ?>
+
     <!-- "wider" top-bar menu for 'medium' and up -->
     <div class="row header show-for-medium">
       <div class="medium-12 columns text-right text-uppercase search-nav">
