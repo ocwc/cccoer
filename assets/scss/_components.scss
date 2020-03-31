@@ -56,6 +56,10 @@ $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $greenText;
 }
 
+.u-color-blue {
+  color: $blueDark;
+}
+
 img.alignright {
   float: right;
   margin: 0 0 1em 1em
@@ -457,7 +461,7 @@ li.footer-header {
 /* Home - Info */
 .home-info {
   padding: rem-calc(100) 0 rem-calc(48);
-  background-color: $green;
+  background-color: $grey;
 
   @include breakpoint(small only) {
     padding: rem-calc(32) 0 rem-calc(16);

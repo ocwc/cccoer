@@ -50,7 +50,7 @@
     <div class="home-info">
         <div class="row align-center">
             <div class="column grow text-center">
-                <h3 class="u-color-textgreen">Case Studies</h3>
+                <h3 class="u-color-blue">Case Studies</h3>
             </div>
         </div>
 
