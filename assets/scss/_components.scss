@@ -313,15 +313,16 @@ li.footer-header {
 }
 
 .button.grey {
-  background-color: $grey;
+  background-color: $white;
   color: $greyText;
+  border: 1px solid transparent;
 }
 
 .button.grey:hover,
 .button.grey:focus {
-  background-color: $greenHover;
-  color: $greenHoverText;
-  text-decoration: underline;
+  color: $black;
+  //text-decoration: underline;
+  border: 1px solid $blue;
 }
 
 .button-flat {
