@@ -237,6 +237,10 @@ li.footer-header {
   color: $greenText;
 }
 
+.menu.submenu {
+  box-shadow: 0 4px 4px 0 #8f8f8f;
+}
+
 .menu.submenu a {
   font-weight: bold;
 }
@@ -246,7 +250,7 @@ li.footer-header {
 }
 
 .dropdown.menu > li.is-dropdown-submenu-parent.is-active > a::after {
-  visibility: hidden;
+  //visibility: hidden;
 }
 
 /*

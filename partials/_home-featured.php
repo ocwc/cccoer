@@ -17,9 +17,10 @@
                 <?php $c = 0; ?>
                 <?php while ( have_rows( 'highlights', 'option' ) ) : the_row(); ?>
                     <?php /* highlight-bg-green highlight-bg-blue highlight-bg-yellow highlight-bg-red */ ?>
-                    <div class="cell small-12 medium-auto highlight-container grid-y align-middle align-right
+                    <div class="cell highlight-container grid-y align-middle align-right
                         <?= 'highlight-bg-' . get_sub_field( 'background_color' ); ?>
                         <?= $class ?>
+                        <?= $num_rows === 3 ? 'medium-6 large-auto' : 'medium-auto'; ?>
                        "
                     >
                         <div class="highlight-container__inner">
