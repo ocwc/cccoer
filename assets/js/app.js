@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
         map.on('load', function () {
             $.ajax({
                 dataType: "jsonp",
-                url: 'https://members.oeconsortium.org/api/v1/address/list/geo/consortium/CCCOER/',
+                url: 'https://members.oeglobal.org/api/v1/address/list/geo/consortium/CCCOER/',
                 data: {format: 'jsonp'},
                 success: function (geoJsonData) {
                     var layerOptions = {

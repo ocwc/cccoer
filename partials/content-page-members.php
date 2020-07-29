@@ -87,7 +87,7 @@ foreach ( $states as $state ) {
                         <?php $link = '/about/members/' . $member->id; ?>
                         <a class="member-logo" href="<?= $link ?>">
                             <img class=""
-                                 src="https://members.oeconsortium.org/<?php echo $member->logo_large; ?>"
+                                 src="https://members.oeglobal.org/<?php echo $member->logo_large; ?>"
                                  alt="<?php echo $member->name; ?> logo">
 
                             <div class="member-readmore">
