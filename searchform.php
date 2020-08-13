@@ -4,11 +4,11 @@
     <div class="medium-5 medium-offset-1 columns">
       	<label>Search CCCOER Archives
         <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
-        <input 
-        	type="search" 
+        <input
+        	type="search"
         	placeholder="Enter search keywords (e.g. Textbooks, OER)"
         	value="<?php echo get_search_query() ?>" name="s"
-        	title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" 
+        	title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>"
         />
       </label>
     </div>

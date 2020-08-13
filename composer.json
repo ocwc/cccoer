@@ -1,6 +1,9 @@
 {
-    "require": {
-        "abraham/twitteroauth": "^1.0.1",
-        "stoutlogic/acf-builder": "^1.9"
-    }
+  "require": {
+    "abraham/twitteroauth": "^1.0.1",
+    "stoutlogic/acf-builder": "^1.9"
+  },
+  "require-dev": {
+    "filp/whoops": "^2.7.3"
+  }
 }
