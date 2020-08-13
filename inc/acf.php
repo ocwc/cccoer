@@ -34,7 +34,7 @@ $options
     ->addUrl( 'link' )
     ->addImage( 'image' )
     ->addText( 'description' )
-    ->setLocation( 'options_page', '==', 'theme-home-settings' );
+    ->setLocation( 'options_page', '==', 'theme-homepage-settings' );
 
 add_action( 'acf/init', function() use ( $home, $options) {
     acf_add_local_field_group( $home->build() );
