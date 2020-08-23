@@ -43,8 +43,8 @@ $options
         'layout' => 'block',
     ] )
     ->addTextarea( 'text' )
-    ->addUrl( 'name' )
-    ->addImage( 'title' )
+    ->addText( 'name' )
+    ->addText( 'title' )
     ->setLocation( 'options_page', '==', 'theme-homepage-settings' );
 
 add_action( 'acf/init', function() use ( $home, $options) {
