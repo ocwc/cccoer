@@ -33,8 +33,7 @@ $options
     ->addText( 'title' )
     ->addUrl( 'link' )
     ->addImage( 'image' )
-    ->addText( 'description' )
-    ->setLocation( 'options_page', '==', 'theme-homepage-settings' );
+    ->addText( 'description' );
 
 $options
     ->addRepeater( 'options-testimonials', [
@@ -46,7 +45,7 @@ $options
     ->addTextarea( 'text' )
     ->addUrl( 'name' )
     ->addImage( 'title' )
-    ->setLocation( 'options_page', '==', 'theme-home-settings' );
+    ->setLocation( 'options_page', '==', 'theme-homepage-settings' );
 
 add_action( 'acf/init', function() use ( $home, $options) {
     acf_add_local_field_group( $home->build() );
