@@ -36,6 +36,18 @@ $options
     ->addText( 'description' )
     ->setLocation( 'options_page', '==', 'theme-homepage-settings' );
 
+$options
+    ->addRepeater( 'options-testimonials', [
+        'label' => 'Testimonials',
+        'min'    => 1,
+        'max'    => 6,
+        'layout' => 'block',
+    ] )
+    ->addTextarea( 'text' )
+    ->addUrl( 'name' )
+    ->addImage( 'title' )
+    ->setLocation( 'options_page', '==', 'theme-home-settings' );
+
 add_action( 'acf/init', function() use ( $home, $options) {
     acf_add_local_field_group( $home->build() );
     acf_add_local_field_group( $options->build() );
